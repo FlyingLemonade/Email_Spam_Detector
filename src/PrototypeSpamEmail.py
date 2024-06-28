@@ -13,8 +13,8 @@ data = df.where((pd.notnull(df)),"")
 
 data.shape
 
-data.loc[data['Category'] == 'spam' , 'Category',] = 0 # data shown as 0 if it is a spam
-data.loc[data['Category'] == 'ham', 'Category',] = 1 # data shown as 1 if it is not a spam
+data.loc[data['Category'] == 'spam' , 'Category'] = 0 # data shown as 0 if it is a spam
+data.loc[data['Category'] == 'ham', 'Category'] = 1 # data shown as 1 if it is not a spam
 
 X = data['Message']
 Y = data['Category']
