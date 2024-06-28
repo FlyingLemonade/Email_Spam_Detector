@@ -14,8 +14,8 @@ data = df.where((pd.notnull(df)),"")
 
 data.shape
 
-data.loc[data['Kategori'] == 'spam' , 'Kategori',] = 0 # data shown as 0 if it is a spam
-data.loc[data['Kategori'] == 'ham', 'Kategori',] = 1 # data shown as 1 if it is not a spam
+data.loc[data['Kategori'] == 'spam' , 'Kategori'] = 0 # data shown as 0 if it is a spam
+data.loc[data['Kategori'] == 'ham', 'Kategori'] = 1 # data shown as 1 if it is not a spam
 
 X = data['Pesan']
 Y = data['Kategori']
