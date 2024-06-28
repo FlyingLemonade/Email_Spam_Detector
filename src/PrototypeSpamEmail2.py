@@ -14,8 +14,8 @@ data = df.where((pd.notnull(df)),"")
 
 data.shape
 
-data.loc[data['Kategori'] == 'spam' , 'Kategori',] = 0 # data shown as 0 if it is a spam
-data.loc[data['Kategori'] == 'ham', 'Kategori',] = 1 # data shown as 1 if it is not a spam
+data.loc[data['Kategori'] == 'spam' , 'Kategori'] = 0 # data shown as 0 if it is a spam
+data.loc[data['Kategori'] == 'ham', 'Kategori'] = 1 # data shown as 1 if it is not a spam
 
 X = data['Pesan']
 Y = data['Kategori']
@@ -42,8 +42,8 @@ X_test_features = feature_extraction.transform(X_test)
 label_encoder = LabelEncoder()
 
 # Encode the labels
-Y_train = label_encoder.fit_transform(Y_train)
-Y_test = label_encoder.transform(Y_test)
+Y_train=Y_train.astype('int')
+Y_test=Y_test.astype('int')
 
 model = KNeighborsClassifier(n_neighbors=2)
 model.fit(X_train_features, Y_train)

@@ -1,0 +1,8 @@
+numpy 
+pandas 
+scikit-learn 
+matplotlib
+mail-parser
+tensorflow 
+tabulate 
+imbalanced-learn

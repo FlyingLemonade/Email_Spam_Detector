@@ -1,0 +1,684 @@
+Delivered-To: christopher.ryan7231@gmail.com
+Received: by 2002:a05:6a10:9908:b0:57f:cc71:9c5d with SMTP id j8csp120894pxh;
+        Tue, 25 Jun 2024 21:23:57 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFoVsE6pFQDlSMCRFWwTAuPmvM1AmnZbAF7HfX94a6Rr9qL56L49CdsmWC9TnF9eydnurvM
+X-Received: by 2002:a05:6a20:4a11:b0:1bd:28bc:b047 with SMTP id adf61e73a8af0-1bd28bcb828mr1953894637.0.1719375837058;
+        Tue, 25 Jun 2024 21:23:57 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1719375837; cv=none;
+        d=google.com; s=arc-20160816;
+        b=lrWsmZWNKQha7zNtfYTrLpEzQ44hMkxxo1HzRdzsfRzWs2Xw6U5cJlGzc0WQ2ht6Xj
+         Typ5eu69XvHHWNwYSPvYGzVIYAiHKXHzUBb5/pJsI8uwN3Py6+3I67soCppckVAfiMO4
+         pwCdiULPEY/vzhHheq/xitGuwX4K5mHdvDILDGhEk+3NicyvNMY0VU+30ovZGDaCo7B8
+         MUThMJmksPbgKHq7HIay/zEo7/Ma+OThLn5YeC63eaf5qYHlC0fguCd+ZftXP7bYV38Q
+         KoLlIELCl8eONsTbX8Xfe+s7axz9yP3lOfTG6tynK8VsAER1k97gubbVE3x65DPjud4V
+         OuAg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=campaign-guid:campaign-track:campaign-type:campaign-unsub
+         :feedback-id:list-id:list-unsubscribe:list-unsubscribe-post
+         :precedence:mime-version:to:reply-to:from:subject:date:message-id
+         :dkim-signature:dkim-signature;
+        bh=ILIRewMtk1W46cbYwqH2sG9BR99iJZEziPnXGaykKGI=;
+        fh=ChNaiZo/g7KbZ7brwj1zX9RzYusLVWVtD1uwYtpWqKs=;
+        b=DD5Pfi8VL3EuD7nocMyQwCfRkQVgI3xJIZ9sxkNQi2YFpuR/W2nGSfr4xy9lQimlzP
+         kcwi8qJ+CrfELb+5gvEEAmMZy+nYfZvoMI9y5f1Vb1ZpqaosJ622j9qMtk7DDLH5yCqP
+         fXPyf9UQVygK4XpaKcwEtC0lpVcqbYEdzDr++DQPwOyIgUGHwecuntb/X+XIn1YAGy1g
+         k7fRz5r+8ko5y2c4UFpxH4PGqvMC2raAkfRR8B72zDMi+VE9P1usCoyO/EVY9YP+HFKS
+         mu7wfqkS7jANgfGtP219ZJ4WGfWSfldXMns0Y6m1mOn2E4i5YR+uSCldg3myLfEAhc34
+         OSjw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@itbox.id header.s=kirimemail header.b=orQv1gTf;
+       dkim=pass header.i=@lbi04b5r.dkijakarta.super.kirimemail.co header.s=q420182 header.b=LiJ0KbuN;
+       spf=pass (google.com: domain of bounce3@lbi04b5r.dkijakarta.super.kirimemail.co designates 103.171.19.50 as permitted sender) smtp.mailfrom=bounce3@lbi04b5r.dkijakarta.super.kirimemail.co
+Return-Path: <bounce3@lbi04b5r.dkijakarta.super.kirimemail.co>
+Received: from ip01.rn04.kirimemail.net (ip01.rn04.kirimemail.net. [103.171.19.50])
+        by mx.google.com with ESMTPS id d9443c01a7336-1f9eb5e07f8si98516025ad.478.2024.06.25.21.23.56
+        for <christopher.ryan7231@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Tue, 25 Jun 2024 21:23:57 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce3@lbi04b5r.dkijakarta.super.kirimemail.co designates 103.171.19.50 as permitted sender) client-ip=103.171.19.50;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@itbox.id header.s=kirimemail header.b=orQv1gTf;
+       dkim=pass header.i=@lbi04b5r.dkijakarta.super.kirimemail.co header.s=q420182 header.b=LiJ0KbuN;
+       spf=pass (google.com: domain of bounce3@lbi04b5r.dkijakarta.super.kirimemail.co designates 103.171.19.50 as permitted sender) smtp.mailfrom=bounce3@lbi04b5r.dkijakarta.super.kirimemail.co
+DKIM-Signature: v=1; a=rsa-sha256;
+ bh=ILIRewMtk1W46cbYwqH2sG9BR99iJZEziPnXGaykKGI=; d=itbox.id; h=Message-ID:
+ Date: Subject: From: Reply-To: To: MIME-Version: Content-Type: X-MAILER:
+ X-Kirimemail-Skip: X-Complaints: X-AuthUser: Precedence:
+ List-Unsubscribe-Post: List-Unsubscribe: List-Id: Feedback-ID:
+ Campaign-UNSUB: Campaign-TYPE: Campaign-TRACK: Campaign-GUID; i=@itbox.id;
+ s=kirimemail; c=relaxed/relaxed; t=1719375835;
+ b=orQv1gTf8pqtFv1QN6/GBDfPgK1Y7quyH+QhpOovrMy7nNfVlZ2VGf4Pu5mZWvivncCgoNWcL
+ J52271HHVtpoEMlC2rlRxufPg1ZOr5qrS74bEsCEQIl8Tgw+UI65CGVK5Tns3hQlEdMQFMnPS
+ QYT8WslWUaom6+bd8cBIIxuzJcYxw81txJKDn7BhGJwJ2wL1p9Wz+JuehWxeoUL+ysZHgzQyz
+ 8MUMbuhgOYyTy7p8ZD/QW3aBj+kUmi01eh3ThR6t2jdd1ipWK0Lq/VaqOnIHpsVbLoG5Cwo4z
+ P1hhH8dQ70i7JoArNnJTU9DB5u2zsHNNHQcs/17zHc2DNIOpsA==
+DKIM-Signature: v=1; a=rsa-sha256;
+ bh=ILIRewMtk1W46cbYwqH2sG9BR99iJZEziPnXGaykKGI=;
+ d=lbi04b5r.dkijakarta.super.kirimemail.co; h=Message-ID: Date: Subject: From:
+ Reply-To: To: MIME-Version: Content-Type: X-MAILER: X-Kirimemail-Skip:
+ X-Complaints: X-AuthUser: Precedence: List-Unsubscribe-Post:
+ List-Unsubscribe: List-Id: Feedback-ID: Campaign-UNSUB: Campaign-TYPE:
+ Campaign-TRACK: Campaign-GUID; i=@lbi04b5r.dkijakarta.super.kirimemail.co;
+ s=q420182; c=relaxed/relaxed; t=1719375835;
+ b=LiJ0KbuNLYi0+HBMwOFb3kbJ7+716KDSQOiO9xqvfFHMpLkSf8/xqRZZ3VcUd9GcQHe/kLVYa
+ raAriGW7JWgo+QIPK1pMx7/SWKk5Y1rwyjMkG0kFa/79Pqv2pvuCyRbvy9z7PzGNMrys2HfGh
+ TZDXrIROuKk57jYrLHHuZuXGRQwZWDTHYBqDg1LVvOG89y2RCVu2YlHV+mmVfyyokOhaKyOBX
+ prDWMjPUL2f0OSYcOHQbt4PyqmMvKidEhufZs8sXTXFpS1nLmG9/cSunxH0irHI1HHHvE23PB
+ uN0FR37Pq8/zYtfYjGJBYf6GBF/1dw46V4tG1gVeHoNmqbihug==
+Message-ID: <4ae1d2a41584364a8a99ad68a641801d@swift.generated>
+Date: Wed, 26 Jun 2024 11:23:52 +0700
+Subject: =?utf-8?Q?=F0=9F=94=A5?= EXTRA DISKON 70%  BELAJAR IT DI ITBOX!
+ =?utf-8?Q?=F0=9F=94=A5?= 
+From: Clara dari ITBOX <halo@itbox.id>
+Reply-To: Clara dari ITBOX <halo@itbox.id>
+To: christopher.ryan7231@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1719375833_d5775bfaf467cb673dc889a8f9ced2fc_=_"
+X-MAILER: Kirim.Email
+X-Kirimemail-Skip: 1
+X-Complaints: abuse@kirim.email
+X-AuthUser: aXRib3g=
+Precedence: bulk
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <https://li4Go6q8.k-email03.com/unsubscribe/esiRw0dbWTJtF4H20240625045123WTH/856c035e79967ae583f22086db565658cbfa58f6071caf5a14db50b08d50aefb/c/85>
+List-Id: 856c035e79967ae583f22086db565658cbfa58f6071caf5a14db50b08d50aefb
+ <856c035e79967ae583f22086db565658cbfa58f6071caf5a14db50b08d50aefb.md.authmail01.com>
+Feedback-ID: b622237a2e4595645770f226a7f06d0789c2e83dc77738da9545c0083d30028e:856c035e79967ae583f22086db565658cbfa58f6071caf5a14db50b08d50aefb:Broadcast:KirimEmail
+Campaign-UNSUB: https://list-manage.krmnkl.com//unsubscribe/esiRw0dbWTJtF4H20240625045123WTH/856c035e79967ae583f22086db565658cbfa58f6071caf5a14db50b08d50aefb/c/85
+Campaign-TYPE: bc_
+Campaign-TRACK: esiRw0dbWTJtF4H20240625045123WTH
+Campaign-GUID: 8bbbc386-9b9c-4021-b778-9c5ec8b67067
+
+
+--_=_swift_1719375833_d5775bfaf467cb673dc889a8f9ced2fc_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+@media only screen and (min-width: 620px) {
+  .u-row {
+    width: 600px !important;
+  }
+  .u-row .u-col {
+    vertical-align: top;
+  }
+
+  .u-row .u-col-100 {
+    width: 600px !important;
+  }
+
+}
+
+@media (max-width: 620px) {
+  .u-row-container {
+    max-width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .u-row .u-col {
+    min-width: 320px !important;
+    max-width: 100% !important;
+    display: block !important;
+  }
+  .u-row {
+    width: 100% !important;
+  }
+  .u-col {
+    width: 100% !important;
+  }
+  .u-col > div {
+    margin: 0 auto;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+table,
+tr,
+td {
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+p {
+  margin: 0;
+}
+
+.ie-container table,
+.mso-container table {
+  table-layout: fixed;
+}
+
+* {
+  line-height: inherit;
+}
+
+a[x-apple-data-detectors=3D'true'] {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+table, td { color: #000000; } #u_body a { color: #2943d1; text-decoration: =
+underline; }
+=09   ![](https://kirimemail.sgp1.digitaloceanspaces.com/app/user/img_UfiJF=
+Rz6_1719308777.jpg)  Hai ka Christopher
+
+Ingin belajar IT tapi bingung =
+mulai dari mana? ITBOX hadir untukmu! Dengan Google Review terbanyak dan di=
+percaya lebih dari 10.000 member dari seluruh Indonesia, ITBOX adalah pilih=
+an tepat untuk perjalanan belajar IT kamu. Di ITBOX, kami mengajarkan dasar=
+-dasar yang kuat, mulai dari instalasi tools hingga praktek nyata. =
+=F0=9F=92=BB
+
+**ITBOX cocok banget untuk kamu yang:**
+ =E2=9D=8C Taku=
+t belajar karena nggak punya basic IT
+ =F0=9F=93=B1 Merasa gaptek
+ =
+=F0=9F=92=BB Merasa nggak punya pengetahuan coding sama sekali
+ =
+=F0=9F=94=A2 Merasa nggak bisa matematika
+ =F0=9F=98=9F Merasa minder
+ =
+=E2=9D=93 Takut nggak bisa mengikuti pelajaran karena nggak ada basic IT
+=
+ Atau mungkin kamu mau ikut bootcamp yang mahal-mahal tapi takut udah buang=
+ duit dan ujungnya nggak bisa ngikutin pelajarannya? =F0=9F=98=B1 ITBOX aka=
+n bantu kamu untuk berani mulai! =F0=9F=92=AA
+
+**=F0=9F=9A=AB STOP TUND=
+A-TUNDA! =F0=9F=9A=AB**
+ Jangan sampai masa depan kamu jadi rusak + kamu =
+kalah karena teman kamu sudah mulai lebih dulu!
+
+**BERANI MULAI BERSAMA=
+ ITBOX**
+ Kenapa harus belajar di ITBOX?=20
+ =E2=9C=85 Video Learning (bi=
+sa diakses kapanpun dan dimanapun) BUKAN KELAS LIVE=20
+ =E2=9C=85 Video kua=
+litas HD
+ =E2=9C=85 Akses seumur hidup=20
+ =E2=9C=85 GRATIS SERTIFIKAT =
+
+ =E2=9C=85 Diajarkan dari SUPER BASIC sampai kamu punya fundamental yang=
+ kuat=20
+ =E2=9C=85 Panduan praktek serta instalasi software step by step d=
+an terstruktur=20
+ =E2=9C=85 Flow belajar: beli kursus =E2=80=94&gt; nonton=
+ video pembelajaran =E2=80=94&gt; kerjain quiz dan post-test =E2=80=94&gt; =
+dapat sertifikat dan share ke LinkedIn=20
+ =E2=9C=85 Forum diskusi dan kons=
+ultasi bulanan khusus bundle
+
+
+=20
+ =F0=9F=8E=89 Yuukkk **BELI SEKARA=
+NG**! Karena ada **EXTRA DISKON 70% khusus untuk 50 Pendaftar pertama**. Kl=
+ik tombol dibawah ini :
+
+=20
+
+  [**BELI SEKARANG** ](https://li4Go6q8=
+.k-email03.com/redir/6F2bKBCLTftY7OX20240625045125fEG/856c035e79967ae583f22=
+086db565658cbfa58f6071caf5a14db50b08d50aefb/c/85)=20
+
+ =20
+
+=20
+
+=20
+=
+
+=20
+
+=20
+
+=20
+
+ **Jangan lupa follow kami ya**
+
+=20
+
+   [![F=
+acebook](https://cdn.tools.unlayer.com/social/icons/circle/facebook.png "Fa=
+cebook")](https://li4Go6q8.k-email03.com/redir/0AHE3af4xMpcD5n2024062504512=
+7ATo/856c035e79967ae583f22086db565658cbfa58f6071caf5a14db50b08d50aefb/c/85 =
+"Facebook") [![Instagram](https://cdn.tools.unlayer.com/social/icons/circle=
+/instagram.png "Instagram")](https://li4Go6q8.k-email03.com/redir/84ybBtDH0=
+NgInws20240625045128MBA/856c035e79967ae583f22086db565658cbfa58f6071caf5a14d=
+b50b08d50aefb/c/85 "Instagram") [![YouTube](https://cdn.tools.unlayer.com/s=
+ocial/icons/circle/youtube.png "YouTube")](https://li4Go6q8.k-email03.com/r=
+edir/ScPVe780FWLNjpn20240625045129DuU/856c035e79967ae583f22086db565658cbfa5=
+8f6071caf5a14db50b08d50aefb/c/85 "YouTube")=20
+
+=20
+
+ =20
+
+=20
+
+ =
+
+
+=20
+
+=20
+
+=20
+
+  **ITBOX**
+
+Ruko Business Park =C2=B7 Jakar=
+ta Barat - 11620 =C2=B7 DKI Jakarta=20
+
+[ View on the web](https://li4Go6=
+q8.k-email03.com/feed/esiRw0dbWTJtF4H20240625045123WTH/856c035e79967ae583f2=
+2086db565658cbfa58f6071caf5a14db50b08d50aefb/c/85)
+
+[Unsubscribe](https=
+://li4Go6q8.k-email03.com/unsubscribe/esiRw0dbWTJtF4H20240625045123WTH/856c=
+035e79967ae583f22086db565658cbfa58f6071caf5a14db50b08d50aefb/c/85) | [Repor=
+t](https://li4Go6q8.k-email03.com/unsubscribe/form/esiRw0dbWTJtF4H202406250=
+45123WTH/856c035e79967ae583f22086db565658cbfa58f6071caf5a14db50b08d50aefb/c=
+/85) | [Update your preferences.](https://li4Go6q8.k-email03.com/managesubs=
+cription/esiRw0dbWTJtF4H20240625045123WTH/856c035e79967ae583f22086db565658c=
+bfa58f6071caf5a14db50b08d50aefb/c/85)
+
+[![](https://list-manage.krmnkl.=
+com/img/logo-footer.png)](https://li4Go6q8.k-email03.com//aff/aXRib3g=3D/Qk=
+MgUFJPTU8gRGlza29uIDg3JSArIEV4dHJhIERpc2tvbiA3MCUgUGF5ZGF5Ym94)
+
+![bran=
+d logo](https://li4Go6q8.k-email03.com/brand-logo.png?token=3DesiRw0dbWTJtF=
+4H20240625045123WTH&hash=3D856c035e79967ae583f22086db565658cbfa58f6071caf5a=
+14db50b08d50aefb&efl=3Dc&htfl=3D85)![brand logo](https://li4Go6q8.k-email03=
+.com/brand-logo.png?token=3DesiRw0dbWTJtF4H20240625045123WTH&hash=3D856c035=
+e79967ae583f22086db565658cbfa58f6071caf5a14db50b08d50aefb&efl=3Dc&htfl=3D85=
+)
+
+--_=_swift_1719375833_d5775bfaf467cb673dc889a8f9ced2fc_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir=3D"ltr" xmlns=
+=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:schemas-microsoft-com:offi=
+ce:office" xmlns:v=3D"urn:schemas-microsoft-com:vml"><head><!--[if gte mso =
+9]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]--><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"><meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-=
+scale=3D1.0"><meta name=3D"x-apple-disable-message-reformatting"><!--[if !m=
+so]><!--><meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"><!--<![=
+endif]--><title></title><style type=3D"text/css">@media only screen and (mi=
+n-width: 620px) {
+  .u-row {
+    width: 600px !important;
+  }
+  .u-row .u-col {
+    vertical-align: top;
+  }
+
+  .u-row .u-col-100 {
+    width: 600px !important;
+  }
+
+}
+
+@media (max-width: 620px) {
+  .u-row-container {
+    max-width: 100% !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .u-row .u-col {
+    min-width: 320px !important;
+    max-width: 100% !important;
+    display: block !important;
+  }
+  .u-row {
+    width: 100% !important;
+  }
+  .u-col {
+    width: 100% !important;
+  }
+  .u-col > div {
+    margin: 0 auto;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+table,
+tr,
+td {
+  vertical-align: top;
+  border-collapse: collapse;
+}
+
+p {
+  margin: 0;
+}
+
+.ie-container table,
+.mso-container table {
+  table-layout: fixed;
+}
+
+* {
+  line-height: inherit;
+}
+
+a[x-apple-data-detectors=3D'true'] {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+table, td { color: #000000; } #u_body a { color: #2943d1; text-decoration: =
+underline; }
+=09</style></head><body class=3D"clean-body u_body" style=3D"margin: 0;padd=
+ing: 0;-webkit-text-size-adjust: 100%;background-color: #f5f6f8;color: #000=
+000"><!--[if IE]><div class=3D"ie-container"><![endif]--><!--[if mso]><div =
+class=3D"mso-container"><![endif]-->
+<table cellpadding=3D"0" cellspacing=3D"0" id=3D"u_body" style=3D"border-co=
+llapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0p=
+t;mso-table-rspace: 0pt;vertical-align: top;min-width: 320px;Margin: 0 auto=
+;background-color: #f5f6f8;width:100%"><tbody><tr style=3D"vertical-align: =
+top"><td style=3D"word-break: break-word;border-collapse: collapse !importa=
+nt;vertical-align: top"><!--[if (mso)|(IE)]><table width=3D"100%" cellpaddi=
+ng=3D"0" cellspacing=3D"0" border=3D"0"><tr><td align=3D"center" style=3D"b=
+ackground-color: #f5f6f8;"><![endif]-->
+=09=09=09<div class=3D"u-row-container" style=3D"padding: 0px;background-co=
+lor: transparent">
+=09=09=09<div class=3D"u-row" style=3D"margin: 0 auto;min-width: 320px;max-=
+width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: br=
+eak-word;background-color: transparent;">
+=09=09=09<div style=3D"border-collapse: collapse;display: table;width: 100%=
+;height: 100%;background-color: transparent;"><!--[if (mso)|(IE)]><table wi=
+dth=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td style=
+=3D"padding: 0px;background-color: transparent;" align=3D"center"><table ce=
+llpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"width:600px;"><tr s=
+tyle=3D"background-color: transparent;"><![endif]--><!--[if (mso)|(IE)]><td=
+ align=3D"center" width=3D"600" style=3D"background-color: #ffffff;width: 6=
+00px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid =
+transparent;border-right: 0px solid transparent;border-bottom: 0px solid tr=
+ansparent;" valign=3D"top"><![endif]-->
+=09=09=09<div class=3D"u-col u-col-100" style=3D"max-width: 320px;min-width=
+: 600px;display: table-cell;vertical-align: top;">
+=09=09=09<div style=3D"background-color: #ffffff;height: 100%;width: 100% !=
+important;"><!--[if (!mso)&(!IE)]><!-->
+=09=09=09<div style=3D"box-sizing: border-box; height: 100%; padding: 0px;b=
+order-top: 0px solid transparent;border-left: 0px solid transparent;border-=
+right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![=
+endif]-->
+=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"pr=
+esentation" style=3D"font-family:arial,helvetica,sans-serif;" width=3D"100%=
+"><tbody><tr><td align=3D"left" style=3D"overflow-wrap:break-word;word-brea=
+k:break-word;padding:10px;font-family:arial,helvetica,sans-serif;">
+=09=09=09=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%"><tbody><tr><td align=3D"center" style=3D"padding-right: 0px;p=
+adding-left: 0px;"><img align=3D"center" alt=3D"" border=3D"0" src=3D"https=
+://kirimemail.sgp1.digitaloceanspaces.com/app/user/img_UfiJFRz6_1719308777.=
+jpg" style=3D"outline: none;text-decoration: none;-ms-interpolation-mode: b=
+icubic;clear: both;display: inline-block !important;border: none;height: au=
+to;float: none;width: 100%;max-width: 580px;" title=3D"" width=3D"580"></td=
+>
+=09=09=09=09=09=09=09=09</tr></tbody></table></td>
+=09=09=09=09=09</tr></tbody></table><table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" role=3D"presentation" style=3D"font-family:arial,helvetica=
+,sans-serif;" width=3D"100%"><tbody><tr><td align=3D"left" style=3D"overflo=
+w-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helv=
+etica,sans-serif;">
+=09=09=09=09=09=09<div style=3D"font-size: 14px; line-height: 140%; text-al=
+ign: left; word-wrap: break-word;">
+=09=09=09=09=09=09<p style=3D"line-height: 140%; text-align: left;"><span s=
+tyle=3D"line-height:19.6px">Hai ka </span>Christopher</p>
+
+=09=09=09=09=09=09<p style=3D"line-height: 140%;">=C2=A0</p>
+
+=09=09=09=09=09=09<p style=3D"line-height: 140%;">Ingin belajar IT tapi bin=
+gung mulai dari mana? ITBOX hadir untukmu! Dengan Google Review terbanyak d=
+an dipercaya lebih dari 10.000 member dari seluruh Indonesia, ITBOX adalah =
+pilihan tepat untuk perjalanan belajar IT kamu. Di ITBOX, kami mengajarkan =
+dasar-dasar yang kuat, mulai dari instalasi tools hingga praktek nyata. =
+=F0=9F=92=BB<br>
+=09=09=09=09=09=09=C2=A0</p>
+
+=09=09=09=09=09=09<p style=3D"line-height: 140%;"><strong>ITBOX cocok bange=
+t untuk kamu yang:</strong><br>
+=09=09=09=09=09=09=E2=9D=8C Takut belajar karena nggak punya basic IT<br>
+=09=09=09=09=09=09=F0=9F=93=B1 Merasa gaptek<br>
+=09=09=09=09=09=09=F0=9F=92=BB Merasa nggak punya pengetahuan coding sama s=
+ekali<br>
+=09=09=09=09=09=09=F0=9F=94=A2 Merasa nggak bisa matematika<br>
+=09=09=09=09=09=09=F0=9F=98=9F Merasa minder<br>
+=09=09=09=09=09=09=E2=9D=93 Takut nggak bisa mengikuti pelajaran karena ngg=
+ak ada basic IT<br>
+=09=09=09=09=09=09Atau mungkin kamu mau ikut bootcamp yang mahal-mahal tapi=
+ takut udah buang duit dan ujungnya nggak bisa ngikutin pelajarannya? =
+=F0=9F=98=B1=E2=80=A8ITBOX akan bantu kamu untuk berani mulai! =F0=9F=92=
+=AA</p>
+
+=09=09=09=09=09=09<p style=3D"line-height: 140%;">=C2=A0</p>
+
+=09=09=09=09=09=09<p style=3D"line-height: 140%;">=C2=A0</p>
+
+=09=09=09=09=09=09<p style=3D"line-height: 140%;"><strong>=F0=9F=9A=AB STOP=
+ TUNDA-TUNDA! =F0=9F=9A=AB</strong><br>
+=09=09=09=09=09=09Jangan sampai masa depan kamu jadi rusak + kamu kalah kar=
+ena teman kamu sudah mulai lebih dulu!</p>
+
+=09=09=09=09=09=09<p style=3D"line-height: 140%;">=C2=A0</p>
+
+=09=09=09=09=09=09<p style=3D"line-height: 140%;"><strong>BERANI MULAI BERS=
+AMA ITBOX</strong><br>
+=09=09=09=09=09=09Kenapa harus belajar di ITBOX?=E2=80=A8<br>
+=09=09=09=09=09=09=E2=9C=85 Video Learning (bisa diakses kapanpun dan diman=
+apun) BUKAN KELAS LIVE=E2=80=A8<br>
+=09=09=09=09=09=09=E2=9C=85 Video kualitas HD<br>
+=09=09=09=09=09=09=E2=9C=85 Akses seumur hidup=E2=80=A8<br>
+=09=09=09=09=09=09=E2=9C=85 GRATIS SERTIFIKAT=E2=80=A8<br>
+=09=09=09=09=09=09=E2=9C=85 Diajarkan dari SUPER BASIC sampai kamu punya fu=
+ndamental yang kuat=E2=80=A8<br>
+=09=09=09=09=09=09=E2=9C=85 Panduan praktek serta instalasi software step b=
+y step dan terstruktur=E2=80=A8<br>
+=09=09=09=09=09=09=E2=9C=85 Flow belajar: beli kursus =E2=80=94&gt; nonton =
+video pembelajaran =E2=80=94&gt; kerjain quiz dan post-test =E2=80=94&gt; d=
+apat sertifikat dan share ke LinkedIn=E2=80=A8<br>
+=09=09=09=09=09=09=E2=9C=85 Forum diskusi dan konsultasi bulanan khusus bun=
+dle</p>
+
+=09=09=09=09=09=09<p style=3D"line-height: 140%;"><br>
+=09=09=09=09=09=09=C2=A0<br>
+=09=09=09=09=09=09=F0=9F=8E=89 Yuukkk <strong>BELI SEKARANG</strong>! Karen=
+a ada <strong>EXTRA DISKON 70% khusus untuk 50 Pendaftar pertama</strong>. =
+Klik tombol dibawah ini :</p>
+=09=09=09=09=09=09</div>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr></tbody></table><table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" role=3D"presentation" style=3D"font-family:arial,helvetica=
+,sans-serif;" width=3D"100%"><tbody><tr><td align=3D"left" style=3D"overflo=
+w-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helv=
+etica,sans-serif;"><!--[if mso]><style>.v-button {background: transparent !=
+important;}</style><![endif]-->
+=09=09=09=09=09=09<div align=3D"center"><!--[if mso]><v:roundrect xmlns:v=
+=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:off=
+ice:word" href=3D"https://li4Go6q8.k-email03.com/redir/6F2bKBCLTftY7OX20240=
+625045125fEG/856c035e79967ae583f22086db565658cbfa58f6071caf5a14db50b08d50ae=
+fb/c/85" style=3D"height:37px; v-text-anchor:middle; width:156px;" arcsize=
+=3D"11%"  stroke=3D"f" fillcolor=3D"#2943d1"><w:anchorlock/><center style=
+=3D"color:#FFFFFF;"><![endif]--><a class=3D"v-button" href=3D"https://li4Go=
+6q8.k-email03.com/redir/6F2bKBCLTftY7OX20240625045125fEG/856c035e79967ae583=
+f22086db565658cbfa58f6071caf5a14db50b08d50aefb/c/85" style=3D"box-sizing: b=
+order-box;display: inline-block;text-decoration: none;-webkit-text-size-adj=
+ust: none;text-align: center;color: #FFFFFF; background-color: #2943d1; bor=
+der-radius: 4px;-webkit-border-radius: 4px; -moz-border-radius: 4px; width:=
+auto; max-width:100%; overflow-wrap: break-word; word-break: break-word; wo=
+rd-wrap:break-word; mso-border-alt: none;font-size: 14px;" target=3D"_blank=
+"><span style=3D"display:block; line-height:120%; padding:10px 20px"><stron=
+g><span style=3D"font-size:14px; line-height:16.8px">BELI SEKARANG</span></=
+strong></span> </a> <!--[if mso]></center></v:roundrect><![endif]--></div>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr></tbody></table><!--[if (!mso)&(!IE)]><!--></div>
+=09=09=09<!--<![endif]--></div>
+=09=09=09</div>
+=09=09=09<!--[if (mso)|(IE)]></td><![endif]--><!--[if (mso)|(IE)]></tr></ta=
+ble></td></tr></table><![endif]--></div>
+=09=09=09</div>
+=09=09=09</div>
+
+=09=09=09<div class=3D"u-row-container" style=3D"padding: 0px;background-co=
+lor: transparent">
+=09=09=09<div class=3D"u-row" style=3D"margin: 0 auto;min-width: 320px;max-=
+width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: br=
+eak-word;background-color: #ffffff;">
+=09=09=09<div style=3D"border-collapse: collapse;display: table;width: 100%=
+;height: 100%;background-color: transparent;"><!--[if (mso)|(IE)]><table wi=
+dth=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"><tr><td style=
+=3D"padding: 0px;background-color: transparent;" align=3D"center"><table ce=
+llpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"width:600px;"><tr s=
+tyle=3D"background-color: #ffffff;"><![endif]--><!--[if (mso)|(IE)]><td ali=
+gn=3D"center" width=3D"600" style=3D"width: 600px;padding: 20px;border-top:=
+ 0px solid transparent;border-left: 0px solid transparent;border-right: 0px=
+ solid transparent;border-bottom: 0px solid transparent;" valign=3D"top"><!=
+[endif]-->
+=09=09=09<div class=3D"u-col u-col-100" style=3D"max-width: 320px;min-width=
+: 600px;display: table-cell;vertical-align: top;">
+=09=09=09<div style=3D"height: 100%;width: 100% !important;"><!--[if (!mso)=
+&(!IE)]><!-->
+=09=09=09<div style=3D"box-sizing: border-box; height: 100%; padding: 20px;=
+border-top: 0px solid transparent;border-left: 0px solid transparent;border=
+-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<!=
+[endif]-->
+=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"pr=
+esentation" style=3D"font-family:arial,helvetica,sans-serif;" width=3D"100%=
+"><tbody><tr><td align=3D"left" style=3D"overflow-wrap:break-word;word-brea=
+k:break-word;padding:0px;font-family:arial,helvetica,sans-serif;">
+=09=09=09=09=09=09<div style=3D"font-size: 14px; color: #666666; line-heigh=
+t: 140%; text-align: center; word-wrap: break-word;">
+=09=09=09=09=09=09<p style=3D"font-size: 14px; line-height: 140%;"><strong>=
+<span style=3D"font-size:16px; line-height:22.4px">Jangan lupa follow kami =
+ya</span></strong></p>
+=09=09=09=09=09=09</div>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr></tbody></table><table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" role=3D"presentation" style=3D"font-family:arial,helvetica=
+,sans-serif;" width=3D"100%"><tbody><tr><td align=3D"left" style=3D"overflo=
+w-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helv=
+etica,sans-serif;">
+=09=09=09=09=09=09<div align=3D"center">
+=09=09=09=09=09=09<div style=3D"display: table; max-width:110px;"><!--[if (=
+mso)|(IE)]><table width=3D"110" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0"><tr><td style=3D"border-collapse:collapse;" align=3D"center"><table =
+width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"bo=
+rder-collapse:collapse; mso-table-lspace: 0pt;mso-table-rspace: 0pt; width:=
+110px;"><tr><![endif]--><!--[if (mso)|(IE)]><td width=3D"32" style=3D"width=
+:32px; padding-right: 5px;" valign=3D"top"><![endif]-->
+=09=09=09=09=09=09<table align=3D"left" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" height=3D"32" style=3D"width: 32px !important;height: 32px !i=
+mportant;display: inline-block;border-collapse: collapse;table-layout: fixe=
+d;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-al=
+ign: top;margin-right: 5px" width=3D"32"><tbody><tr style=3D"vertical-align=
+: top"><td align=3D"left" style=3D"word-break: break-word;border-collapse: =
+collapse !important;vertical-align: top" valign=3D"middle"><a href=3D"https=
+://li4Go6q8.k-email03.com/redir/0AHE3af4xMpcD5n20240625045127ATo/856c035e79=
+967ae583f22086db565658cbfa58f6071caf5a14db50b08d50aefb/c/85" target=3D"_bla=
+nk" title=3D"Facebook"><img alt=3D"Facebook" src=3D"https://cdn.tools.unlay=
+er.com/social/icons/circle/facebook.png" style=3D"outline: none;text-decora=
+tion: none;-ms-interpolation-mode: bicubic;clear: both;display: block !impo=
+rtant;border: none;height: auto;float: none;max-width: 32px !important" tit=
+le=3D"Facebook" width=3D"32"></a></td>
+=09=09=09=09=09=09=09=09</tr></tbody></table><!--[if (mso)|(IE)]></td><![en=
+dif]--><!--[if (mso)|(IE)]><td width=3D"32" style=3D"width:32px; padding-ri=
+ght: 5px;" valign=3D"top"><![endif]--><table align=3D"left" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" height=3D"32" style=3D"width: 32px !impor=
+tant;height: 32px !important;display: inline-block;border-collapse: collaps=
+e;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rsp=
+ace: 0pt;vertical-align: top;margin-right: 5px" width=3D"32"><tbody><tr sty=
+le=3D"vertical-align: top"><td align=3D"left" style=3D"word-break: break-wo=
+rd;border-collapse: collapse !important;vertical-align: top" valign=3D"midd=
+le"><a href=3D"https://li4Go6q8.k-email03.com/redir/84ybBtDH0NgInws20240625=
+045128MBA/856c035e79967ae583f22086db565658cbfa58f6071caf5a14db50b08d50aefb/=
+c/85" target=3D"_blank" title=3D"Instagram"><img alt=3D"Instagram" src=3D"h=
+ttps://cdn.tools.unlayer.com/social/icons/circle/instagram.png" style=3D"ou=
+tline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: bo=
+th;display: block !important;border: none;height: auto;float: none;max-widt=
+h: 32px !important" title=3D"Instagram" width=3D"32"></a></td>
+=09=09=09=09=09=09=09=09</tr></tbody></table><!--[if (mso)|(IE)]></td><![en=
+dif]--><!--[if (mso)|(IE)]><td width=3D"32" style=3D"width:32px; padding-ri=
+ght: 0px;" valign=3D"top"><![endif]--><table align=3D"left" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" height=3D"32" style=3D"width: 32px !impor=
+tant;height: 32px !important;display: inline-block;border-collapse: collaps=
+e;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rsp=
+ace: 0pt;vertical-align: top;margin-right: 0px" width=3D"32"><tbody><tr sty=
+le=3D"vertical-align: top"><td align=3D"left" style=3D"word-break: break-wo=
+rd;border-collapse: collapse !important;vertical-align: top" valign=3D"midd=
+le"><a href=3D"https://li4Go6q8.k-email03.com/redir/ScPVe780FWLNjpn20240625=
+045129DuU/856c035e79967ae583f22086db565658cbfa58f6071caf5a14db50b08d50aefb/=
+c/85" target=3D"_blank" title=3D"YouTube"><img alt=3D"YouTube" src=3D"https=
+://cdn.tools.unlayer.com/social/icons/circle/youtube.png" style=3D"outline:=
+ none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;dis=
+play: block !important;border: none;height: auto;float: none;max-width: 32p=
+x !important" title=3D"YouTube" width=3D"32"></a></td>
+=09=09=09=09=09=09=09=09</tr></tbody></table><!--[if (mso)|(IE)]></td><![en=
+dif]--><!--[if (mso)|(IE)]></tr></table></td></tr></table><![endif]--></div=
+>
+=09=09=09=09=09=09</div>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr></tbody></table><!--[if (!mso)&(!IE)]><!--></div>
+=09=09=09<!--<![endif]--></div>
+=09=09=09</div>
+=09=09=09<!--[if (mso)|(IE)]></td><![endif]--><!--[if (mso)|(IE)]></tr></ta=
+ble></td></tr></table><![endif]--></div>
+=09=09=09</div>
+=09=09=09</div>
+=09=09=09<!--[if (mso)|(IE)]></td></tr></table><![endif]--></td>
+=09=09</tr></tbody></table><!--[if mso]></div><![endif]--><!--[if IE]></div=
+><![endif]--><div id=3D"kirimemail-userinfo-footer" class=3D"kirimemail-use=
+rinfo-footer" style=3D"text-align: center; font-family: arial; padding: 20p=
+x 0; font-size: 12px;"><div class=3D"kirimemail-userinfo"><strong>ITBOX</st=
+rong><div class=3D"userinfo-tagline" style=3D"font-size: 12px; font-style: =
+italic;"></div><div class=3D"userinfo-content" style=3D"padding: 5px 0; mar=
+gin: 0 0;">Ruko Business Park =C2=B7 Jakarta Barat - 11620 =C2=B7 DKI Jakar=
+ta </div><div style=3D"color: #777777; font-size: 12px; margin: 0 0;"><a hr=
+ef=3D"https://li4Go6q8.k-email03.com/feed/esiRw0dbWTJtF4H20240625045123WTH/=
+856c035e79967ae583f22086db565658cbfa58f6071caf5a14db50b08d50aefb/c/85" styl=
+e=3D"color: #777777; text-decoration: underline;"> View on the web</div ><d=
+iv style=3D"color: inherit; font-size: 12px; margin: 0 0;"><a href=3D"https=
+://li4Go6q8.k-email03.com/unsubscribe/esiRw0dbWTJtF4H20240625045123WTH/856c=
+035e79967ae583f22086db565658cbfa58f6071caf5a14db50b08d50aefb/c/85" style=3D=
+"color: inherit; text-decoration: underline;">Unsubscribe</a>&nbsp; |&nbsp;=
+ <a href=3D"https://li4Go6q8.k-email03.com/unsubscribe/form/esiRw0dbWTJtF4H=
+20240625045123WTH/856c035e79967ae583f22086db565658cbfa58f6071caf5a14db50b08=
+d50aefb/c/85" style=3D"color: inherit; text-decoration: underline;">Report<=
+/a>&nbsp; |&nbsp; <a href=3D"https://li4Go6q8.k-email03.com/managesubscript=
+ion/esiRw0dbWTJtF4H20240625045123WTH/856c035e79967ae583f22086db565658cbfa58=
+f6071caf5a14db50b08d50aefb/c/85" style=3D"color: inherit; text-decoration: =
+underline;">Update your preferences.</a>&nbsp; </div><div style=3D"text-ali=
+gn: center; margin: 0 0; padding: 10px 0;"><a href=3D"https://li4Go6q8.k-em=
+ail03.com//aff/aXRib3g=3D/QkMgUFJPTU8gRGlza29uIDg3JSArIEV4dHJhIERpc2tvbiA3M=
+CUgUGF5ZGF5Ym94" style=3D"display: inline-block;"><img src=3D"https://list-=
+manage.krmnkl.com/img/logo-footer.png" height=3D"30px"></a></div><noscript>=
+<img alt=3D"brand logo" src=3D"https://li4Go6q8.k-email03.com/brand-logo.pn=
+g?token=3DesiRw0dbWTJtF4H20240625045123WTH&hash=3D856c035e79967ae583f22086d=
+b565658cbfa58f6071caf5a14db50b08d50aefb&efl=3Dc&htfl=3D85" border=3D"0"></n=
+oscript><img alt=3D"brand logo" src=3D"https://li4Go6q8.k-email03.com/brand=
+-logo.png?token=3DesiRw0dbWTJtF4H20240625045123WTH&hash=3D856c035e79967ae58=
+3f22086db565658cbfa58f6071caf5a14db50b08d50aefb&efl=3Dc&htfl=3D85" border=
+=3D"0"></div></div></body></html>
+
+
+--_=_swift_1719375833_d5775bfaf467cb673dc889a8f9ced2fc_=_--
+
