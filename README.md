@@ -16,4 +16,5 @@
 Note :
 <ol>
 <li>Nomor 7 task terakhir ae</li>
+<li>Link dataset + model fitur detect img spam : https://drive.google.com/drive/folders/1Grxp_RPsKiXzSTjPc3CMYUUbmtjU33wc?usp=drive_link</li>
 </ol>
