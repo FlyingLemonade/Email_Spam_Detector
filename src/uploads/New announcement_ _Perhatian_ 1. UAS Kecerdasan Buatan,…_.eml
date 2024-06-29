@@ -1,0 +1,227 @@
+Delivered-To: 
+Received: by 2002:a05:7010:985:b0:3d8:e2cc:8e03 with SMTP id fd5csp29502mdb;
+        Tue, 18 Jun 2024 18:12:57 -0700 (PDT)
+X-Received: by 2002:a17:90a:a011:b0:2c5:297b:72f8 with SMTP id 98e67ed59e1d1-2c7b5da88f4mr1254150a91.33.1718759577204;
+        Tue, 18 Jun 2024 18:12:57 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1718759577; cv=none;
+        d=google.com; s=arc-20160816;
+        b=URb/IKH8DtqEfVbEIJK/dPb5Zjszc8CmwYRKpsMiQfXyncmbBbs04TQD/QRyrJG9If
+         KjYLkicln9wJ71jkkPqfDpSGZTZfVup1F3DFq6GaNSdHuGlx1tCENAOPj3cW/blBKUlh
+         GRiGX5sbKCKtEm+9twZondkvLJzGn+dTDcLbP5TyWdojPsUzGVPq/ifGXQfiCzsaawfB
+         hlsPnFgh386awcCc8qhu2XLnQfE4LOk6Yu1jzTJAyU8xli4Mhr7n4GmUuUEec6yUyr6D
+         fnrDh9VGu0wqko+olpW/ZiqN1E93xVQg9r4GukYxBLxAvtrLEZcBhTtvXrO1Pxf8rCvp
+         MNOg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:date:mime-version:dkim-signature;
+        bh=dtttZljj9a0OhDz3PIJCbSe/jT8USgTGjYd3Bpm1nOk=;
+        fh=bT62C00g+OpkpElQTWcB+ac7+t9Pi5At619QhOXC3qc=;
+        b=Tb9FTr+fSkCFm3TXy1P2lyR+zdudGev2kiPZr2kT0j7yQHWsJqjU0A9WV23ikn8KOU
+         iZ4+ngFEPIeBJ2YlWOmJ63jkxjuz6ILORHy2lDKRtWwZKoG/AVkfRpbLjxMbCu4U7iNx
+         e8OFmr5j2MfN0IJ02XQOitJzehX0m8OEzKElRqP3n/IshyKPnksr38q+jZGaUbe/0R7X
+         tOG5Km4X48p1pz3fCpoewFfKs3sPmYBZ0OmO2lK5ULOLcVlcT6qhKFHV7jMLhhsGV0VH
+         v6Kg2Uzhs3j+jJY30dwY7NJOj3o98IIBmk9xh1awAYsRWtOnKEtE2WMAQHci1/VImhQa
+         bj7A==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@google.com header.s=20230601 header.b=yDb3JvKO;
+       spf=pass (google.com: domain of 3mdbyzgguapsqr-uhso1fodvvurrp.jrrjoh.frp@chime-notifications-apps.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3mDByZggUAPsqr-uhso1fodvvurrp.jrrjoh.frp@chime-notifications-apps.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=google.com
+Return-Path: <3mDByZggUAPsqr-uhso1fodvvurrp.jrrjoh.frp@chime-notifications-apps.bounces.google.com>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id 98e67ed59e1d1-2c4c7ef5d76sor6487697a91.1.2024.06.18.18.12.56
+        for 
+        (Google Transport Security);
+        Tue, 18 Jun 2024 18:12:57 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3mdbyzgguapsqr-uhso1fodvvurrp.jrrjoh.frp@chime-notifications-apps.bounces.google.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@google.com header.s=20230601 header.b=yDb3JvKO;
+       spf=pass (google.com: domain of 3mdbyzgguapsqr-uhso1fodvvurrp.jrrjoh.frp@chime-notifications-apps.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3mDByZggUAPsqr-uhso1fodvvurrp.jrrjoh.frp@chime-notifications-apps.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=google.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20230601; t=1718759576; x=1719364376;
+        h=to:from:subject:message-id:date:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=dtttZljj9a0OhDz3PIJCbSe/jT8USgTGjYd3Bpm1nOk=;
+        b=yDb3JvKONm51KtYszekXwafH3u8KWgAw1wxLlRyT4WJetvduj7PwDe2oZSwvQ8/dz9
+         q0gj9yCrxFwxWzhd8ZV4nMUmdfSdsVEYnkCgskxDS/yLkiVnL/JC63rrNpcwJew/LcLX
+         121+Cesns22s9h1PrfMfNZ4iSywAuKbmcGU3WYMhX8fOYYRZHCztUqyTo+KsOMDgqk0D
+         QA2Fo8/orHNs2u9p6QF6BvlDw1ImJbkOExH+MCt/0pACuTugs/2LK1wb871/AVo/Z1G1
+         v0gHPldVM0/Jy4iIPQ3fzCgL7VTJuZHG/4ZXhEt8LRZqKxE36lPXOYH9YBDlN7tPBUqo
+         8Bug==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1718759576; x=1719364376;
+        h=to:from:subject:message-id:date:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=dtttZljj9a0OhDz3PIJCbSe/jT8USgTGjYd3Bpm1nOk=;
+        b=Ta479lRcH34wN3YaajDBRB7qdeVKhznBJo8WuWTLfMfoJvxlGfrBLz6PiOo30hTOVY
+         KY6on1SoGetril1HRfwLRIIomw0wxGSHqo4UISMvzaCroMWC2rb4bF9hL0KNqDjTdI9B
+         B+GGz1F4ATNVZol6M8i7pcudkFCKlIEAFf52XtMnDIMSMPnojm5aaN2RI6Jc3wsgiPMf
+         SroIChFJA9eZ8Vjg8w8mZfk/7bn8Bv+9enPE4X2l9nBE9q+OXf/B5sl+ucicclLE6rel
+         8oofcGWuiFyVBHJfVgaSkX0WobIM12HKRASglSQe9JajfV0/GJeyh27v/KBS4dNGbj+F
+         omFA==
+X-Gm-Message-State: AOJu0Yx2C6gqRZw93CBPF8YQIiKctFc2ei4R101IsdGyoeYJfQAua6wY
+	icH1u4sMEsis2vvUkk4ggGDSH8n8cQSues+KFIMuC7awrsw9wdCLxjhAohT0i/Dd4eulI2yFC25
+	S6ElzYhlacp9KqruFfSIlSZbpR6qE+O27uTuOTMay
+X-Google-Smtp-Source: AGHT+IEeuQc+7kneDW7/+CpO5tBbGhJRuqWTDRbzXWguD3TcdfTZX6IzIK5pbNZ+IKRa8pscMkyn6Ff758uXuLm6oks00wSO1XI=
+MIME-Version: 1.0
+X-Received: by 2002:a17:90a:8c16:b0:2c2:df58:bb8c with SMTP id
+ 98e67ed59e1d1-2c7b5c8ff3fmr1466552a91.18.1718759576739; Tue, 18 Jun 2024
+ 18:12:56 -0700 (PDT)
+Date: Tue, 18 Jun 2024 18:12:56 -0700
+X-Notifications: NEW_ANNOUNCEMENT:473705117088:696361783982-1718759531753
+X-Notifications-Bounce-Info: AU8pKH18OehxgQVITwqMUY9MH7YtaMAx26BomdJPCfHH3_hraa4i6PaVDQmKl-5TQVySQ8cFj2aWMBr6T60EKOI1Pfq-6SHSamkMc4npNr_iAawzjitNbeu88Nq5ZcMWAx9qfVUG9QzwErJbXmjvRkz2nxlo1YoPDH4nZCZfLjOLTSLgRYAbD1jzwVChz5Br8_AikSzlqFTSAl-AdCBhHxm2H9EJ4JnIeGrxiat0RvRWX30F9lgOWnmLPX_o37D57Ykrhc98EoLVgQNjAwNjA0MDQxNTM1NTk2OTMzMg
+Message-ID: <MpwGUHKAfFX6We8vytobWQ@notifications.google.com>
+Subject: =?UTF-8?Q?New_announcement=3A_=22Perhatian=3A=0D=0A1=2E_UAS_Kecerdasan_Buat?=
+	=?UTF-8?Q?an=2C=E2=80=A6=22?=
+From: "Gregorius S. (Classroom)" <no-reply@classroom.google.com>
+Content-Type: multipart/alternative; boundary="00000000000006a376061b33e66e"
+
+--00000000000006a376061b33e66e
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+
+
+Notification settings  
+<https://accounts.google.com/AccountChooser?continue=https://classroom.google.com/s&Email=>
+Artificial Intelligence Class B  
+<https://accounts.google.com/AccountChooser?continue=https://classroom.google.com/c/NDczNzA1MTE3MDg4&Email=>
+New announcement
+
+Perhatian:
+1. UAS Kecerdasan Buatan, bersifat Open Book/Open Laptop... Jawaban dalam  
+bentuk multiple choice di google form, sehingga bawa laptop adalah  
+keharusan. Juga jangan lupa bawa cable roll untuk extension charger laptop  
+kalian. Soal bisa teori, konsep atau hitungan, materi dari awal sampai  
+akhir (Saran:Jangan lupa belajar penerapan formula2 dalam excel, supaya  
+bisa menghitung jawaban dengan benar)
+2. Untuk project akhir dipresentasikan Selasa, tgl 2 Juli, jam 10 pagi sd  
+selesai secara online
+(kita gunakan meet dari google classroom ini. Ada 2 penilaian, nilai
+project dan nilai perorangan. Nilai project bersifat kelompok
+berdasarkan seberapa baik applikasi yg dibuat, dan bagaimana penerapan
+metode AI tertentu dalam applikasi tersebut. Nilai perorangan dididapat  
+dari seberapa banyak sumbangsih anggota kelompok yg dinilai terhadap  
+proyeknya.
+See details  
+<https://accounts.google.com/AccountChooser?continue=https://classroom.google.com/c/NDczNzA1MTE3MDg4/p/Njk2MzYxNzgzOTgy&Email=>
+Posted on 8:12 AM, Jun 19 (WIB) by Gregorius S.
+
+Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043 USA
+This email was sent to you because you indicated that you'd like to receive  
+email notifications from Google Classroom. If you don't want to receive  
+emails like this, you can unsubscribe or change your settings  
+<https://accounts.google.com/AccountChooser?continue=https://classroom.google.com/s&Email=>.
+
+--00000000000006a376061b33e66e
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><link href=3Dhttps://fonts.googleapis.com/css?family=3DRoboto:4=
+00,500,700,bold|Google+Sans:400,500,700,bold rel=3Dstylesheet><style>@media=
+ (forced-colors: active) and (prefers-color-scheme: dark){.classroomTitleDa=
+rk{content: url("https://www.gstatic.com/classroom/email/classroom_type_whi=
+te.png");}}</style></head><body style=3D"font-family: Roboto,Helvetica,Aria=
+l,sans-serif; margin: 0; padding: 0; background-color: #FFFFFF"><!--[if mso=
+]><style>body, table, div, ul, li, td, span, a { font-family: Helvetica, Ar=
+ial, sans-serif !important; }</style><![endif]--><table cellpadding=3D0 cel=
+lspacing=3D0 dir=3Dltr role=3Dpresentation align=3Dcenter style=3D"backgrou=
+nd-color: #FFFFFF; border-collapse: collapse; max-width: 632px; min-width: =
+256px; word-break: break-word; width: 100%;"><!--[if mso]><table cellpaddin=
+g=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"600" style=3D"bord=
+er-collapse: collapse; table-width: fixed;"><tr><td><![endif]--><tr><td sty=
+le=3D"padding: 16px;"><table cellpadding=3D0 cellspacing=3D0 dir=3Dltr role=
+=3Dpresentation><tbody><tr><td style=3D"padding-bottom: 16px;"><table cellp=
+adding=3D0 cellspacing=3D0 dir=3Dltr role=3Dpresentation style=3D"backgroun=
+d-color: #FFFFFF; border-collapse: collapse; max-width: 632px; min-width: 2=
+56px; background-color: #FFFFFF; width: 100%;" width=3D100%><tr><td><div st=
+yle=3D"float: left; line-height: 32px;"><img alt=3DClassroom&#32;Logo aria-=
+hidden=3Dtrue style=3D"display: block; margin: 0;" height=3D32 width=3D190 =
+src=3Dhttps://www.gstatic.com/classroom/email/classroom_text_with_logo_grey=
+700.png></div><div style=3D"float: right; padding-left: 32px; vertical-alig=
+n: top;" align=3Dright><a href=3Dhttps://accounts.google.com/AccountChooser=
+?continue=3Dhttps://classroom.google.com/s&amp;Email=3Dc=
+.ac.id style=3D"text-decoration: none;"><table cellpadding=3D0 cellspacing=
+=3D0 dir=3Dltr role=3Dpresentation style=3D"border-collapse: collapse;"><tr=
+><td style=3D"padding-top: 6px;"><img alt=3D&#39;&#39; style=3D"vertical-al=
+ign: middle" height=3D18 width=3D18 src=3Dhttps://fonts.gstatic.com/s/i/goo=
+glematerialicons/notifications/v18/gm_grey-24dp/1x/gm_notifications_gm_grey=
+_24dp.png></td><td style=3D"font-family: Google Sans,Roboto,Helvetica,Arial=
+,sans-serif; font-size: 14px; font-weight: 500; letter-spacing: 0.25px; lin=
+e-height: 20px;color: #3C4043; padding-left: 4px; white-space: nowrap; padd=
+ing-top: 8px;">Notification settings</td></tr></table></a></div></td></tr><=
+/table></td></tr><tr><td style=3D"padding-bottom: 24px;"><table cellpadding=
+=3D0 cellspacing=3D0 dir=3Dltr role=3Dpresentation style=3D"border: 1px sol=
+id #DADCE0; border-collapse: separate; border-radius: 8px; width: 100%;"><t=
+r><td style=3D"padding: 0"><table cellpadding=3D0 cellspacing=3D0 dir=3Dltr=
+ role=3Dpresentation style=3D"width: 100%; border-collapse: collapse; "><tr=
+><td style=3Dpadding:&#32;24px&#32;24px&#32;0;><table cellpadding=3D0 cells=
+pacing=3D0 dir=3Dltr role=3Dpresentation style=3D"width: 100%; border-colla=
+pse: collapse; "><tr><td style=3Dborder&#45;bottom:&#32;1px&#32;solid&#32;#=
+DADCE0;&#32;height:&#32;0;padding&#45;bottom:&#32;8px;&#32;width:&#32;100%;=
+><a href=3Dhttps://accounts.google.com/AccountChooser?continue=3Dhttps://cl=
+assroom.google.com/c/NDczNzA1MTE3MDg4&amp;Email=3Dc.ac.i=
+d style=3D"text-decoration: none;"><table cellpadding=3D0 cellspacing=3D0 d=
+ir=3Dltr role=3Dpresentation style=3Dborder-collapse:collapse;><tr><td styl=
+e=3D"font-family: Roboto,Helvetica,Arial,sans-serif; font-size: 16px; font-=
+weight: 400; letter-spacing: 0.1px; line-height: 24px;color: #202124;vertic=
+al-align: top;">Artificial Intelligence Class B</td><td style=3D"padding-to=
+p: 3px; padding-left: 4px; vertical-align: top;"><img alt=3D&#39;&#39; heig=
+ht=3D18 src=3Dhttps://fonts.gstatic.com/s/i/googlematerialicons/open_in_new=
+/v21/gm_grey-24dp/1x/gm_open_in_new_gm_grey_24dp.png width=3D18></td></tr><=
+/table></a></td></tr></table></td></tr></table></td></tr><tr><td style=3D"p=
+adding: 24px 24px 32px 24px; "><table cellpadding=3D0 cellspacing=3D0 dir=
+=3Dltr role=3Dpresentation border=3D0 style=3D"width: 100%"><tr><td colspan=
+=3D2 style=3D"font-family: Roboto,Helvetica,Arial,sans-serif; font-size: 11=
+px; font-weight: 500; letter-spacing: 0.8px; line-height: 16px; text-transf=
+orm: uppercase;color: #5F6368; padding-bottom: 8px;">New announcement</td><=
+/tr><tr><td style=3D"padding-right: 12px; vertical-align: top; width: 40px;=
+"><!--[if mso]><v:oval xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D=
+"urn:schemas-microsoft-com:office:word" style=3D"height:40px;width:40px;" f=
+illcolor=3D"#5f6368" stroke=3D"f" /><v:image src=3D"https://fonts.gstatic.c=
+om/s/i/googlematerialicons/chat_bubble_outline/v7/white-48dp/2x/gm_chat_bub=
+ble_outline_white_48dp.png" style=3D"position: absolute; top: 8px; left: 8p=
+x; height: 24px; width: 24px;"/><![endif]--><span style=3Dmso-hide:all;><di=
+v style=3D"border-radius: 50%;background-color: #5f6368;height: 24px; width=
+: 24px;padding: 8px;"><img height=3D24 src=3Dhttps://fonts.gstatic.com/s/i/=
+googlematerialicons/chat_bubble_outline/v7/white-48dp/2x/gm_chat_bubble_out=
+line_white_48dp.png width=3D24 role=3Dpresentation /></div></span></td><td>=
+<table cellpadding=3D0 cellspacing=3D0 dir=3Dltr role=3Dpresentation style=
+=3D"width: 100%; word-break: break-word;"><tr><td style=3D"font-family: Goo=
+gle Sans,Roboto,Helvetica,Arial,sans-serif; font-size: 16px; font-weight: 5=
+00; letter-spacing: 0.1px; line-height: 24px;color: #000000; padding-bottom=
+: 4px;font-weight: 400;"><div><b>Perhatian:</b><br>1. UAS Kecerdasan Buatan=
+, bersifat <b>Open Book/Open Laptop</b>... Jawaban dalam bentuk multiple ch=
+oice di google form, sehingga <b>bawa laptop adalah keharusan</b>. Juga jan=
+gan lupa bawa cable roll untuk extension charger laptop kalian.<b> </b><i>S=
+oal bisa teori, konsep atau hitungan, materi dari awal sampai akhir (</i><b=
+><i>Saran:</i></b><i>Jangan lupa belajar penerapan formula2 dalam excel, su=
+paya bisa menghitung jawaban dengan benar)</i><b><br></b>2. Untuk project a=
+khir dipresentasikan <b>Selasa, tgl 2 Juli, jam 10 pagi sd selesai secara o=
+nline</b><br> (kita gunakan meet dari google classroom ini. Ada 2 penilaian=
+, nilai <br>project dan nilai perorangan. Nilai project bersifat kelompok <=
+br>berdasarkan seberapa baik applikasi yg dibuat, dan bagaimana penerapan <=
+br>metode AI tertentu dalam applikasi<b> </b>tersebut<b>. </b>Nilai peroran=
+gan dididapat dari seberapa banyak sumbangsih anggota kelompok yg dinilai t=
+erhadap proyeknya.</div></td></tr><tr><td style=3D"padding-bottom: 12px;"><=
+table cellpadding=3D0 cellspacing=3D0 dir=3Dltr role=3Dpresentation><tr><td=
+ style=3D"border: 1px solid #DADCE0;border-radius: 4px; padding: 8px 24px;"=
+><a href=3Dhttps://accounts.google.com/AccountChooser?continue=3Dhttps://cl=
+assroom.google.com/c/NDczNzA1MTE3MDg4/p/Njk2MzYxNzgzOTgy&amp;Email=3Dc14.ac.id style=3D"font-family: Google Sans,Roboto,Helvetica,Ari=
+al,sans-serif; font-size: 14px; font-weight: 500; letter-spacing: 0.25px; l=
+ine-height: 20px;color: #202124; text-decoration: none;" target=3D_blank>Se=
+e details</a></td></tr></table></td></tr><tr><td style=3D"font-family: Robo=
+to,Helvetica,Arial,sans-serif; font-size: 12px; font-weight: 400; letter-sp=
+acing: 0.3px; line-height: 16px;color: #5F6368;">Posted on 8:12 AM, Jun 19 =
+(WIB) by Gregorius S.</td></tr></table></td></tr></table></td></tr></table>=
+</td></tr><tr><td><div style=3D"float: left; margin-right: 12px;"><img alt=
+=3DGoogle&#32;logo src=3Dhttps://www.gstatic.com/classroom/email/google_log=
+o_grey700.png height=3D26 width=3D64></div><div style=3D"font-family: Robot=
+o,Helvetica,Arial,sans-serif; font-size: 12px; font-weight: 400; letter-spa=
+cing: 0.3px; line-height: 16px;color: #9AA0A6; width: 80%; float: left; mar=
+gin-top: 4px;">Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 9404=
+3 USA<br />This email was sent to you because you indicated that you'd like=
+ to receive email notifications from Google Classroom. If you don't want to=
+ receive emails like this, you can <a href=3Dhttps://accounts.google.com/Ac=
+countChooser?continue=3Dhttps://classroom.google.com/s&amp;Email=3Dc14.ac.id style=3D"color: #9AA0A6;">unsubscribe or change your set=
+tings</a>.</div></td></tr></tbody></table></td></tr><!--[if mso]></td></tr>=
+</table><![endif]--></table></body></html>
+--00000000000006a376061b33e66e--

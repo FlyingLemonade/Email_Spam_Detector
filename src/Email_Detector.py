@@ -1,75 +1,91 @@
 import mailparser
 
-# Load an email file
-
-email = mailparser.parse_from_file('../dataset/New announcement_ _Perhatian_ 1. UAS Kecerdasan Buatan,…_.eml')
-
-text_email = ''.join(email.text_plain)
-lines = text_email.replace("\n", "")
-# lines = "Perkenalkan nama saya adalah joni, anda dapat melihat portofolio saya. "
-
-print(lines)   
-
-
 import tensorflow as tf
 import pickle
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import nltk
 from nltk.corpus import stopwords
-# nltk.download('stopwords')
-# nltk.download('punkt')
+# Function to parse an email from a file
+def parse_email_from_file(filepath):
+    try:
+        email = mailparser.parse_from_file(filepath)
+        return email
+    except Exception as e:
+        return None
 
-folder_path = "./LSTM_Model/Model_4/"
-stop_words = set(stopwords.words('english'))
+# Function to detect emails (example function)
+def email_detectoring(filepath):
+    # Parse email from file
+    parsed_email = parse_email_from_file(filepath)
+    
+    if parsed_email:
+        # Join plain text parts of the email and remove newlines
+        text_email = ''.join(parsed_email.text_plain)
+        lines = text_email.replace("\n", "")
+        print("ini udah fungsinya ges")
+     
+    else:
+        return "Error parsing email or file not found."
+    
+       
+    nltk.download('stopwords')
+    nltk.download('punkt')
 
-# Load the entire model
-file_json = folder_path + 'model_bidirectional.json'
-file_token = folder_path + 'tokenizer.pkl'
-file_weights = folder_path + 'model_bidirectional.weights.h5'
+    folder_path = "./LSTM_Model/Model_4/"
+    stop_words = set(stopwords.words('english'))
 
-with open(file_json, 'r') as json_file:
-    loaded_model_json = json_file.read()
-loaded_model = tf.keras.models.model_from_json(loaded_model_json)
-loaded_model.load_weights(file_weights)
+    # Load the entire model
+    file_json = folder_path + 'model_bidirectional.json'
+    file_token = folder_path + 'tokenizer.pkl'
+    file_weights = folder_path + 'model_bidirectional.weights.h5'
 
-# Load the tokenizer
-with open(file_token, 'rb') as handle:
-    tokenizer = pickle.load(handle)
+    with open(file_json, 'r') as json_file:
+        loaded_model_json = json_file.read()
+    loaded_model = tf.keras.models.model_from_json(loaded_model_json)
+    loaded_model.load_weights(file_weights)
 
-print("Loaded model and tokenizer from disk.")
+    # Load the tokenizer
+    with open(file_token, 'rb') as handle:
+        tokenizer = pickle.load(handle)
 
-def preprocess_input(text, tokenizer, stop_words):
-    # Tokenize the text
-    words = nltk.word_tokenize(text)
-    filtered_sentence = [word.lower() for word in words if word.lower() not in stop_words]
+    print("Loaded model and tokenizer from disk.")
 
-    # Convert back to text after filtering stop words
-    filtered_text = " ".join(filtered_sentence)
+    def preprocess_input(text, tokenizer, stop_words):
+        # Tokenize the text
+        words = nltk.word_tokenize(text)
+        filtered_sentence = [word.lower() for word in words if word.lower() not in stop_words]
 
-    # Tokenize the filtered text
-    sequences = tokenizer.texts_to_sequences([filtered_text])
-    sequence_length = 15
-    padded_sequences = pad_sequences(sequences, maxlen=sequence_length, padding='post')
-    return padded_sequences
+        # Convert back to text after filtering stop words
+        filtered_text = " ".join(filtered_sentence)
 
-# Example input text
-input_text = """
+        # Tokenize the filtered text
+        sequences = tokenizer.texts_to_sequences([filtered_text])
+        sequence_length = 15
+        padded_sequences = pad_sequences(sequences, maxlen=sequence_length, padding='post')
+        return padded_sequences
 
-Sorry to be a pain. Is it ok if we meet another night? I spent late afternoon in casualty and that means i haven't done any of y stuff42moro and that includes all my time sheets and that. Sorry.
+    # Example input text
+    input_text = """
 
-"""
+    Sorry to be a pain. Is it ok if we meet another night? I spent late afternoon in casualty and that means i haven't done any of y stuff42moro and that includes all my time sheets and that. Sorry.
 
-# input_text = lines
+    """
 
-preprocessed_input = preprocess_input(input_text, tokenizer, stop_words)
+    # input_text = lines
 
-# Make a prediction
-prediction = (loaded_model.predict(preprocessed_input) > 0.5).astype(int)
+    preprocessed_input = preprocess_input(input_text, tokenizer, stop_words)
 
-# Output the result
-if prediction == 0:
-    print("spam",prediction[0])
-elif prediction == 1 :
-    print("Normal",prediction[0])
-else:
-    print("Unknown")
+    # Make a prediction
+    prediction = (loaded_model.predict(preprocessed_input) > 0.5).astype(int)
+
+    # Output the result
+    if prediction == 0:
+        print("spam",prediction[0])
+        return "Spam"
+    elif prediction == 1 :
+        print("Normal",prediction[0])
+        return "Normal"
+    else:
+        print("Unknown")
+        return "Unknown"
+    # return lines  # Return or process the manipulated email content
