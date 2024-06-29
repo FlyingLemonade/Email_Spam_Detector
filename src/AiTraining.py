@@ -18,8 +18,12 @@ def clean_text(text):
     text = re.sub(r'\s+', ' ', text).strip()  # Remove extra spaces
     return text
 
-# Read data from CSV file
-df = pd.read_csv('mail_data.csv')
+# List of CSV files to read
+csv_files = ['mail_data.csv']
+
+# Read and concatenate data from multiple CSV files
+dfs = [pd.read_csv(file) for file in csv_files]
+df = pd.concat(dfs, ignore_index=True)
 
 # Clean email text
 df['email'] = df['email'].apply(clean_text)
@@ -62,10 +66,21 @@ model.fit(X_train, y_train, epochs=20, batch_size=32, validation_data=(X_test, y
 loss, accuracy = model.evaluate(X_test, y_test)
 print(f'Accuracy: {accuracy}')
 
-# Example of checking a new email
-new_email = ["Congratulations, you have won a lottery!"]
-new_email_clean = [clean_text(email) for email in new_email]
-new_email_seq = tokenizer.texts_to_sequences(new_email_clean)
-new_email_pad = pad_sequences(new_email_seq, padding='post', maxlen=100)
-prediction = model.predict(new_email_pad)
-print(f'The new email is: {"spam" if prediction[0][0] > 0.5 else "not spam"}')
+# Example of checking multiple new emails often considered as spam
+spam_like_emails = [
+    "Congratulations, you have won a lottery!",
+    "You have been selected for a free prize!",
+    "Exclusive deal just for you, click here now!",
+    "Get rich quick with this amazing offer!",
+    "Win a brand new car, sign up now!",
+    "Free vacation to the Bahamas, claim now!"
+]
+
+spam_like_emails_clean = [clean_text(email) for email in spam_like_emails]
+spam_like_emails_seq = tokenizer.texts_to_sequences(spam_like_emails_clean)
+spam_like_emails_pad = pad_sequences(spam_like_emails_seq, padding='post', maxlen=100)
+predictions = model.predict(spam_like_emails_pad)
+
+# Print results
+for i, email in enumerate(spam_like_emails):
+    print(f'Email: "{email}" is classified as: {"spam" if predictions[i][0] > 0.5 else "not spam"}')
