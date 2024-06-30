@@ -15,7 +15,7 @@ def parse_email_from_file(filepath):
 
 # Function to detect emails (example function)
 def email_detectoring(filepath):
-    # Parse email from file
+    # Parse email from file 
     
        
     nltk.download('stopwords')

@@ -1,7 +1,11 @@
 from flask import Flask, render_template, request
 import os
 import mailparser
+import cv2 as cv
+import numpy as np
+from tensorflow.keras import models
 from Email_Detector import email_detectoring
+from ImageSpamRecon import spamRecon
 
 app = Flask(__name__)
 
@@ -16,7 +20,28 @@ def parse_email_from_file(filepath):
         return email
     except Exception as e:
         return None
-
+    
+# def load_and_predict_image(img_path):
+#     class_names = ['ham', 'spam']
+    
+#     # Load the pre-trained model
+#     model = models.load_model('C:\\Users\\Lenovo\\Downloads\\ImageSpamRecon.keras')
+    
+#     # Load and preprocess the image
+#     img = cv.imread(img_path)
+#     img = cv.resize(img, (128, 128))
+#     img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
+#     img = np.array([img]) / 255.0  # Normalize the image
+    
+#     # Perform prediction
+#     prediction = model.predict(img)
+    
+#     # Interpret prediction
+#     if prediction[0] > 0.5:
+#         return "Spam"
+#     else:
+#         return "Ham"
+        
 @app.route("/", methods=['GET', 'POST'])
 def home():
     email_result = None
@@ -42,6 +67,17 @@ def home():
             filepath = os.path.join(app.config['UPLOAD_FOLDER'], foto.filename)
             foto.save(filepath)
             print(filepath)
+            photo_result = spamRecon(img_path=filepath)
+            return render_template("Proyek.html", email_result=email_result, photo_result=photo_result)
+        
+        
+            # Call the image detection function from ImageSpamRecon.py
+            # photo_result = spamRecon(foto)
+            # if photo_result:
+            #     return render_template("Proyek.html", email_result=email_result, photo_result=photo_result)
+            # else:
+            #     return 'Error processing email or file not found.'
+            
         if email :
             # Call the email detection function from Email_Detector.py
             email_result = email_detectoring(email)
