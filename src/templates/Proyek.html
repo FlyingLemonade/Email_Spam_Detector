@@ -12,12 +12,20 @@
         <path d="M16 3C8.832031 3 3 8.832031 3 16s5.832031 13 13 13 13-5.832031 13-13S23.167969 3 16 3zm0 2c6.085938 0 11 4.914063 11 11 0 6.085938-4.914062 11-11 11-6.085937 0-11-4.914062-11-11C5 9.914063 9.914063 5 16 5zm-1 4v10.28125l-4-4-1.40625 1.4375L16 23.125l6.40625-6.40625L21 15.28125l-4 4V9z"/> 
       </svg></div>
       <h1>Email Detection Result</h1>
-        {% if result %}
+        {% if email_result %}
             <p>Result:</p>
-            <pre>{{ result }}</pre>
+            <pre>{{ email_result }}</pre>
         {% else %}
             <p>No result available or error occurred.</p>
         {% endif %}
+      <hr>
+      <h1>Photo Detection Result</h1>
+      {% if photo_result %}
+            <p>Photo Analysis Result:</p>
+            <pre>{{ photo_result }}</pre>
+      {% else %}
+            <p>No photo analysis result available or error occurred.</p>
+      {% endif %}
       <hr>
       <div class="container"></div>
       <div class="modal">
@@ -26,16 +34,18 @@
             <h1 class="modal-title">Welcome!</h1>
             <p class="modal-desc">This is our project RAWRRRRR.</p>
             <div class="input-block">
-              <label for="email" class="input-label">Email</label>
-              <input type="email" name="email" id="email" placeholder="Email">
+              <label for="email" class="input-label">Foto</label>
+              <form action="/" method="post" enctype="multipart/form-data">
+              <input type="file" name="foto_file" id="foto">
             </div>
             <div class="input-block">
-              <label for="avatar" class="input-label">File</label>
-              <form action="/" method="post" enctype="multipart/form-data">
-                <input type="file" name="email_file" accept=".eml" required>
+              <label for="avatar" class="input-label">Email</label>
+              <!-- <form action="/" method="post" enctype="multipart/form-data"> -->
+                <input type="file" name="email_file" accept=".eml" > 
                 
-           
+                <!-- required -->
             </div>
+            <textarea name="email_text" id=""></textarea>
             <div class="modal-buttons">
               <button class="input-button" type="submit">Upload</button>
             </div> </form>

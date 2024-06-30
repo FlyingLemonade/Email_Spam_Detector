@@ -16,16 +16,6 @@ def parse_email_from_file(filepath):
 # Function to detect emails (example function)
 def email_detectoring(filepath):
     # Parse email from file
-    parsed_email = parse_email_from_file(filepath)
-    
-    if parsed_email:
-        # Join plain text parts of the email and remove newlines
-        text_email = ''.join(parsed_email.text_plain)
-        lines = text_email.replace("\n", "")
-        print("ini udah fungsinya ges")
-     
-    else:
-        return "Error parsing email or file not found."
     
        
     nltk.download('stopwords')

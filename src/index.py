@@ -19,18 +19,41 @@ def parse_email_from_file(filepath):
 
 @app.route("/", methods=['GET', 'POST'])
 def home():
+    email_result = None
+    photo_result = None
     if request.method == 'POST':
         # Check if the post request has the file part
-        if 'email_file' not in request.files:
-            return 'No file part'
+        # if 'email_file' not in request.files:
+        #     return 'No file part'
+        
+        # if 'foto_file' not in request.files:
+        #     return 'No file part'
         
         file = request.files['email_file']
         
-        # If user does not select file, browser also submit an empty part without filename
-        if file.filename == '':
-            return 'No selected file'
+        foto = request.files['foto_file']
         
-        if file:
+        email = request.form.get('email_text')
+       
+        # If user does not select file, browser also submit an empty part without filename
+        # if file.filename == '':
+        #     return 'No selected file'
+        if foto :
+            filepath = os.path.join(app.config['UPLOAD_FOLDER'], foto.filename)
+            foto.save(filepath)
+            print(filepath)
+        if email :
+            # Call the email detection function from Email_Detector.py
+            email_result = email_detectoring(email)
+            
+            if email_result:
+                return render_template("Proyek.html", email_result=email_result, photo_result=photo_result)
+            else:
+                return 'Error processing email or file not found.'
+        # else:
+        #     return 'Error parsing email'  
+
+        if file :
             # Save the file to the uploads directory
             filepath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
             file.save(filepath)
@@ -43,15 +66,10 @@ def home():
                 text_email = ''.join(parsed_email.text_plain)
                 
                 # Call the email detection function from Email_Detector.py
-                result = email_detectoring(filepath)
+                email_result = email_detectoring(text_email)
                 
-                # Print or process the result as needed
-                # Example: Returning the processed email content
-                # return render_template("Proyek.html")
-                # return text_email
-                if result:
-                # Return result to HTML template if available
-                    return render_template("Proyek.html", result=result)
+                if email_result:
+                    return render_template("Proyek.html", email_result=email_result, photo_result=photo_result)
                 else:
                     return 'Error processing email or file not found.'
             else:
@@ -61,3 +79,4 @@ def home():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
