@@ -8,9 +8,7 @@
 <li>Backend Flask MNT</li>
 <li>Fitur Deteksi Spam email melalui file dari email yang di download dari gmail RYAN</li>
 <li>Fitur mendeteksi gambar apakah gambar terindikasi spam atau bukan WARRENTZYKT</li>
-<li>Apakah KNN punya model training? </li>
 <li>Mengenali 2 Bahasa (Indo + Inggris)</li>
-<li>Ganti AI Model karena jawaban susah akurat</li>
 </ol>
 
 Note :
