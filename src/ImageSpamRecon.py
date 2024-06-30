@@ -6,36 +6,42 @@ import matplotlib.pyplot as plt
 from tensorflow.keras import datasets, layers, models
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
-batch_size = 24
-epochs = 5
+batch_size = 73
+epochs = 10
+dataset_dir = 'dataset_path'
 
-train_datagen = ImageDataGenerator (
-    rescale=1./255,
-    rotation_range=20,
-    width_shift_range=0.1,
-    height_shift_range=0.1,
-    shear_range=0.2,
-    zoom_range=0.2,
-    horizontal_flip=True,
-    fill_mode='nearest'
-)
+train_datagen = ImageDataGenerator(rescale=1./255,
+                                rotation_range=20,
+                                width_shift_range=0.1,
+                                height_shift_range=0.1,
+                                shear_range=0.2,
+                                zoom_range=0.2,
+                                horizontal_flip=True,
+                                fill_mode='nearest')
 
-train_generator = train_datagen.flow_from_directory (
-    'C:\\Users\\bryan\\Downloads\\SpamImages',
+test_datagen = ImageDataGenerator(rescale=1./255)
+
+train_generator = train_datagen.flow_from_directory(
+    dataset_dir,
     target_size=(128, 128),
     batch_size=batch_size,
-    class_mode='binary'
-)
+    class_mode='binary')
+
+test_generator = test_datagen.flow_from_directory(
+    dataset_dir,
+    target_size=(128, 128),
+    batch_size=batch_size,
+    class_mode='binary')
 
 # steps_per_epoch = train_generator.samples // train_generator.batch_size
 
 training_images, training_labels = next(train_generator)
-testing_images, testing_labels = next(train_generator)
+testing_images, testing_labels = next(test_generator)
 
 training_labels = training_labels.astype(int)
 testing_labels = testing_labels.astype(int)
 
-class_names = ['spam', 'ham']
+class_names = ['ham', 'spam']
 
 for i in range(16):
     plt.subplot(4, 4, i + 1)
@@ -59,21 +65,23 @@ plt.show()
 # model.add(layers.Conv2D(64, (3, 3), activation='relu'))
 # model.add(layers.Flatten())
 # model.add(layers.Dense(64, activation='relu'))
-# model.add(layers.Dense(1, activation='sigmoid')) #2 classes
+# model.add(layers.Dense(1, activation='sigmoid')) #1 class
 
 # model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
-# model.fit(train_generator, epochs=epochs, steps_per_epoch=len(train_generator), validation_data=train_generator)
+# model.fit(train_generator, epochs=epochs ,validation_data=test_generator)
 
-# loss, accuracy = model.evaluate(testing_images, testing_labels)
+# loss, accuracy = model.evaluate(test_generator)
 # print(f"Loss : {loss}")
 # print(f"Accuracy : {accuracy}")
 
 # model.save('ImageSpamRecon.keras')
 
+#------------------------------
+
 model = models.load_model('ImageSpamRecon.keras')
 
-img = cv.imread('C:\\Users\\bryan\\Lectures\\Kuliah\\Test, Project, dan Ulangan\\Semester 4\\Kecerdasan Buatan\\Project Akhir\\Email_Spam_Detector\\src\\images\\dog.png')
+img = cv.imread('img_path')
 img = cv.resize(img, (128, 128))
 # img = img / 255
 img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
@@ -81,17 +89,9 @@ img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
 plt.imshow(img, cmap=plt.cm.binary)
 
 prediction = model.predict(np.array([img]) / 255)
-index = np.argmax(prediction)
-print(f'Prediction is {class_names[index]} \n')
-
-# import os
-# from PIL import Image
-
-# directory = 'C:\\Users\\bryan\\Downloads\\SpamImages'
-
-# for filename in os.listdir(directory):
-#     file_path = os.path.join(directory, filename)
-#     try:
-#         img = Image.open(file_path)
-#     except (IOError, OSError):
-#         print(f"File '{filename}' is not a valid image file.")
+print(prediction)
+index = prediction[0]
+if (index > 0.5):
+    print(f'Prediction is {class_names[1]} \n')
+else:
+    print(f'Prediction is {class_names[0]} \n')
