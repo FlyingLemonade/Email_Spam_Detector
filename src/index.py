@@ -6,6 +6,7 @@ import numpy as np
 from tensorflow.keras import models
 from Email_Detector import email_detectoring
 from ImageSpamRecon import spamRecon
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 
@@ -21,26 +22,6 @@ def parse_email_from_file(filepath):
     except Exception as e:
         return None
     
-# def load_and_predict_image(img_path):
-#     class_names = ['ham', 'spam']
-    
-#     # Load the pre-trained model
-#     model = models.load_model('C:\\Users\\Lenovo\\Downloads\\ImageSpamRecon.keras')
-    
-#     # Load and preprocess the image
-#     img = cv.imread(img_path)
-#     img = cv.resize(img, (128, 128))
-#     img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
-#     img = np.array([img]) / 255.0  # Normalize the image
-    
-#     # Perform prediction
-#     prediction = model.predict(img)
-    
-#     # Interpret prediction
-#     if prediction[0] > 0.5:
-#         return "Spam"
-#     else:
-#         return "Ham"
         
 @app.route("/", methods=['GET', 'POST'])
 def home():
