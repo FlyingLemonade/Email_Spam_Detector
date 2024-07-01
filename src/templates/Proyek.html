@@ -10,12 +10,11 @@
     <div class="scroll-down">SCROLL DOWN
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
         <path d="M16 3C8.832031 3 3 8.832031 3 16s5.832031 13 13 13 13-5.832031 13-13S23.167969 3 16 3zm0 2c6.085938 0 11 4.914063 11 11 0 6.085938-4.914062 11-11 11-6.085937 0-11-4.914062-11-11C5 9.914063 9.914063 5 16 5zm-1 4v10.28125l-4-4-1.40625 1.4375L16 23.125l6.40625-6.40625L21 15.28125l-4 4V9z"/> 
-      </svg>
-    </div>
+      </svg></div>
       <h1>Email Detection Result</h1>
         {% if email_result %}
             <p>Result:</p>
-            <pre>{{ email_result }}</pre>
+            <pre id="resultEmail">{{ email_result }}</pre>
         {% else %}
             <p>No result available or error occurred.</p>
         {% endif %}
@@ -23,7 +22,7 @@
       <h1>Photo Detection Result</h1>
       {% if photo_result %}
             <p>Photo Analysis Result:</p>
-            <pre>{{ photo_result }}</pre>
+            <pre id="resultFoto">{{ photo_result }}</pre>
       {% else %}
             <p>No photo analysis result available or error occurred.</p>
       {% endif %}
@@ -48,8 +47,41 @@
             </div>
             <textarea name="email_text" id=""></textarea>
             <div class="modal-buttons">
-              <button class="input-button" type="submit">Upload</button>
-            </div> </form>
+              <button class="input-button" type="submit" onclick="showResult()">Upload</button>
+            </div> 
+          </form>
+          <script>
+            function showResult(){
+              var hasilEmail = document.getElementById().innerText;
+              var hasilFoto = document.getElementById().innerText;
+
+              if(hasilEmail == "Normal" && hasilFoto == "ham") {
+                Swal.fire({
+                  icon: "success",
+                  title: "No Spam",
+                  text: "email : " + hasilEmail + "\n" + "foto : " + hasilFoto, 
+                });
+              } else if (hasilEmail == "spam" && hasilFoto == "ham") {
+                Swal.fire({
+                  icon: "error",
+                  title: "Spam",
+                  text: "email : " + hasilEmail + "\n" + "foto : " + hasilFoto, 
+                });
+              } else if (hasilEmail == "Normal" && hasilFoto == "spam") {
+                Swal.fire({
+                  icon: "error",
+                  title: "Spam",
+                  text: "email : " + hasilEmail + "\n" + "foto : " + hasilFoto, 
+                });
+              } else if (hasilEmail == "spam" && hasilFoto == "spam") {
+                Swal.fire({
+                  icon: "error",
+                  title: "Spam",
+                  text: "email : " + hasilEmail + "\n" + "foto : " + hasilFoto, 
+                });
+              }
+            }
+          </script>
           </div>
           <div class="modal-right">
             
@@ -64,5 +96,6 @@
         <button class="modal-button">Click here</button>
       </div>
       <script src="{{ url_for('static', filename='script.js') }}"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
