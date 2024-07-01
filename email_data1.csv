@@ -144,7 +144,7 @@ ham;Are you attending the workshop this weekend?;
 spam;Your account has been flagged for suspicious activity. Click here to verify.;
 ham;Can you review my essay before I submit it?;
 spam;Get a free trial of our premium service. Sign up now.;
-ham;Hey; can you send me the meeting agenda for tomorrow?
+ham;Can you send me the meeting agenda for tomorrow?;
 spam;Congratulations! You've won a luxury vacation package. Claim now!;
 ham;Reminder: Don't forget to bring your ID for the exam tomorrow.;
 spam;Your account security has been compromised. Verify your details immediately.;
@@ -157,7 +157,6 @@ spam;You've been selected for a special discount on our latest products.;
 ham;Can you share the notes from yesterday's lecture?;
 spam;Unlock your potential with our career development workshop. Limited slots available.;
 ham;Let's finalize the presentation slides by tomorrow.;
-spam;Get a free sample of our new product. Limited offer; act fast!
 ham;Reminder: Submit your assignment by the end of the day.;
 spam;Your subscription is about to expire. Renew now to continue enjoying our services.;
 ham;Thank you for your assistance with the conference arrangements.;
@@ -165,7 +164,6 @@ spam;Win a free trip to New York! Enter our contest today.;
 ham;Do you have time for a quick chat this afternoon?;
 spam;Your account has been flagged for suspicious activity. Verify your identity now.;
 ham;Can you confirm the meeting time for tomorrow?;
-spam;   ;   .
 ham;Let's meet up to discuss the upcoming project.;
 spam;You've been pre-approved for a credit card. Apply now to claim your reward.;
 ham;Please find the attached file with the latest statistics report.;
@@ -185,7 +183,7 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
+spam;Buy one get one free on all products today! Don't miss out.;
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -193,7 +191,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -203,7 +200,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -213,7 +209,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -241,7 +236,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -249,7 +243,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -259,7 +252,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -269,7 +261,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -286,7 +277,7 @@ ham;Can we meet to finalize the budget for the next quarter?;
 spam;You've been selected for a special discount on our latest products. Click here.;
 ham;Thanks for your feedback on the proposal draft.;
 spam;Win a free gift card! Claim your prize by clicking here.;
-ham;Hey; can you send me the meeting agenda for tomorrow?
+ham; Can you send me the meeting agenda for tomorrow?;
 spam;Congratulations! You've won a luxury vacation package. Claim now!;
 ham;Reminder: Don't forget to bring your ID for the exam tomorrow.;
 spam;Your account security has been compromised. Verify your details immediately.;
@@ -299,7 +290,6 @@ spam;You've been selected for a special discount on our latest products.;
 ham;Can you share the notes from yesterday's lecture?;
 spam;Unlock your potential with our career development workshop. Limited slots available.;
 ham;Let's finalize the presentation slides by tomorrow.;
-spam;Get a free sample of our new product. Limited offer; act fast!
 ham;Reminder: Submit your assignment by the end of the day.;
 spam;Your subscription is about to expire. Renew now to continue enjoying our services.;
 ham;Thank you for your assistance with the conference arrangements.;
@@ -307,7 +297,6 @@ spam;Win a free trip to New York! Enter our contest today.;
 ham;Do you have time for a quick chat this afternoon?;
 spam;Your account has been flagged for suspicious activity. Verify your identity now.;
 ham;Can you confirm the meeting time for tomorrow?;
-spam;   ;   .
 ham;Let's meet up to discuss the upcoming project.;
 spam;You've been pre-approved for a credit card. Apply now to claim your reward.;
 ham;Please find the attached file with the latest statistics report.;
@@ -327,7 +316,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -335,7 +323,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -345,7 +332,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -355,7 +341,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -383,7 +368,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -391,7 +375,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -401,7 +384,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -411,7 +393,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -428,19 +409,6 @@ ham;Can we meet to finalize the budget for the next quarter?;
 spam;You've been selected for a special discount on our latest products. Click here.;
 ham;Thanks for your feedback on the proposal draft.;
 spam;Win a free gift card! Claim your prize by clicking here.;
-ham;Can you forward me;
-;;
-;;
-;;
-;;
-make more different email with same format ;;
-ChatGPT;;
-Certainly! Here's a continuation with more distinct examples:;;
-;;
-csv;;
-Copy code;;
-type;text;
-ham;Hey; could you send me the latest draft of the report?
 spam;Congratulations! You've won a dream vacation. Claim now!;
 ham;Reminder: Please bring your ID for the exam tomorrow.;
 spam;Your account security has been compromised. Verify your details immediately.;
@@ -453,7 +421,7 @@ spam;You've been selected for a special discount on our latest products.;
 ham;Can you share the notes from yesterday's lecture?;
 spam;Unlock your potential with our career development workshop. Limited slots available.;
 ham;Let's finalize the presentation slides by tomorrow.;
-spam;Get a free sample of our new product. Limited offer; act fast!
+spam;Get a free sample of our new product. Limited offer act fast!;
 ham;Reminder: Submit your assignment by the end of the day.;
 spam;Your subscription is about to expire. Renew now to continue enjoying our services.;
 ham;Thank you for your assistance with the conference arrangements.;
@@ -461,7 +429,6 @@ spam;Win a free trip to New York! Enter our contest today.;
 ham;Do you have time for a quick chat this afternoon?;
 spam;Your account has been flagged for suspicious activity. Verify your identity now.;
 ham;Can you confirm the meeting time for tomorrow?;
-spam;   ;   .
 ham;Let's meet up to discuss the upcoming project.;
 spam;You've been pre-approved for a credit card. Apply now to claim your reward.;
 ham;Please find the attached file with the latest statistics report.;
@@ -481,7 +448,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -489,7 +455,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -499,7 +464,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -509,7 +473,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -537,7 +500,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -545,7 +507,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -555,7 +516,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -565,7 +525,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -593,7 +552,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -601,7 +559,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -611,7 +568,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -621,7 +577,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -649,7 +604,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -657,7 +611,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -667,7 +620,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -677,7 +629,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -705,7 +656,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -713,7 +663,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -723,7 +672,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -733,7 +681,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -761,7 +708,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -769,7 +715,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -779,7 +724,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -789,7 +733,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -817,7 +760,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -825,7 +767,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -835,7 +776,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -845,7 +785,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -873,7 +812,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -881,7 +819,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -891,7 +828,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -901,7 +837,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -937,7 +872,6 @@ spam;Your subscription is expiring soon. Renew now to continue enjoying our serv
 ham;Can we schedule a meeting to discuss the new client proposal?;
 spam;You've won a free trip! Click here to claim your vacation package.;
 ham;Thanks for your feedback on the project plan. Let's discuss further.;
-spam;   ;   .
 ham;Let's confirm the venue for the workshop next week.;
 spam;Your account security is at risk. Verify your details immediately.;
 ham;Join us for a webinar on digital marketing trends next Monday.;
@@ -975,7 +909,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -983,7 +916,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -993,7 +925,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -1003,7 +934,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -1031,7 +961,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -1039,7 +968,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -1049,7 +977,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -1059,7 +986,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -1080,7 +1006,6 @@ spam;Your subscription is expiring soon. Renew now to continue enjoying our serv
 ham;Can we schedule a meeting to discuss the new client proposal?;
 spam;You've won a free trip! Click here to claim your vacation package.;
 ham;Thanks for your feedback on the project plan. Let's discuss further.;
-spam;   ;   .
 ham;Let's confirm the venue for the workshop next week.;
 spam;Your account security is at risk. Verify your details immediately.;
 ham;Join us for a webinar on digital marketing trends next Monday.;
@@ -1118,7 +1043,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -1126,7 +1050,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -1136,7 +1059,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -1146,7 +1068,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -1174,7 +1095,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -1182,7 +1102,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -1192,7 +1111,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -1202,7 +1120,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -1230,7 +1147,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -1238,7 +1154,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -1248,7 +1163,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -1258,7 +1172,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -1286,7 +1199,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -1294,7 +1206,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -1304,7 +1215,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -1314,7 +1224,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -1342,7 +1251,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Let's meet at 10 AM to finalize the project details.;
@@ -1362,7 +1270,6 @@ spam;Your subscription is expiring soon. Renew now to continue enjoying our serv
 ham;Can we schedule a meeting to discuss the new client proposal?;
 spam;You've won a free trip! Click here to claim your vacation package.;
 ham;Thanks for your feedback on the project plan. Let's discuss further.;
-spam;   ;   .
 ham;Let's confirm the venue for the workshop next week.;
 spam;Your account security is at risk. Verify your details immediately.;
 ham;Join us for a webinar on digital marketing trends next Monday.;
@@ -1400,7 +1307,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -1408,7 +1314,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -1418,7 +1323,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -1428,7 +1332,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -1456,7 +1359,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -1464,7 +1366,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -1474,7 +1375,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -1484,7 +1384,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -1512,7 +1411,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Let's meet at 10 AM to finalize the project details.;
@@ -1536,7 +1434,6 @@ spam;Special offer: Buy now and get 50% off your purchase. Shop today!;
 ham;Let's confirm the venue for the workshop next week.;
 spam;Your account security is at risk. Verify your details immediately.;
 ham;Join us for a webinar on digital marketing trends next Monday.;
-spam;Exclusive deal: Buy one;   .
 ham;Please find the attached document for your review and comments.;
 spam;Your subscription is about to expire. Renew now to continue enjoying our services.;
 ham;Can you send me the updated report by the end of the day?;
@@ -1570,7 +1467,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -1578,7 +1474,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -1588,7 +1483,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -1598,7 +1492,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -1626,7 +1519,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Let's meet at 9 AM tomorrow to finalize the project timeline.;
@@ -1650,7 +1542,6 @@ spam;Special offer: Buy now and get 50% off on all purchases. Limited time only!
 ham;Let's confirm the venue for the conference next month.;
 spam;Your account security is at risk. Verify your details immediately.;
 ham;Join us for a webinar on digital marketing trends next Monday.;
-spam;Exclusive deal: Buy one;   !
 ham;Please find the attached document for your review and comments.;
 spam;Your subscription is about to expire. Renew now to continue enjoying our services.;
 ham;Can we schedule a meeting to finalize the budget for the next quarter?;
@@ -1668,7 +1559,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -1676,7 +1566,6 @@ spam;Your account needs immediate attention. Verify your details here.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -1686,7 +1575,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -1696,7 +1584,6 @@ spam;Get a free iPad by signing up for our newsletter.;
 ham;Let's schedule a meeting to review the project timeline.;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Are you available for a discussion later today?;
-spam;   ;   .
 ham;Can you send me the updated report file?;
 spam;Your account has been compromised. Click here to secure it now.;
 ham;Reminder: Submit your expense report by Friday.;
@@ -1724,7 +1611,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Let's finalize the agenda for the team meeting tomorrow morning.;
@@ -1748,7 +1634,7 @@ spam;Special offer: Buy now and get 50% off on all purchases. Limited time only!
 ham;Let's confirm the venue for the upcoming conference next month.;
 spam;Your account security is at risk. Verify your details immediately.;
 ham;Join us for a webinar on digital marketing trends next Monday.;
-spam;Exclusive deal: Buy one;   !
+spam;Exclusive deal: Buy one;
 ham;Please find the attached document for your review and comments.;
 spam;Your subscription is about to expire. Renew now to continue enjoying our services.;
 ham;Can we schedule a meeting to finalize the budget for the next quarter?;
@@ -1766,7 +1652,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -1774,7 +1659,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -1784,7 +1668,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -1802,7 +1685,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -1810,7 +1692,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -1820,7 +1701,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -1838,7 +1718,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -1846,7 +1725,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -1856,7 +1734,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -1874,7 +1751,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -1882,7 +1758,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -1892,7 +1767,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -1910,7 +1784,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -1918,7 +1791,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -1928,7 +1800,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -1946,7 +1817,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -1954,7 +1824,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -1964,7 +1833,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -1982,7 +1850,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -1990,7 +1857,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -2000,7 +1866,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -2018,7 +1883,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -2026,7 +1890,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -2036,7 +1899,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -2054,7 +1916,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -2062,7 +1923,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -2072,7 +1932,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -2090,7 +1949,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -2098,7 +1956,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -2108,7 +1965,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -2126,7 +1982,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -2134,7 +1989,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -2144,7 +1998,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -2162,7 +2015,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -2170,7 +2022,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -2180,7 +2031,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -2198,7 +2048,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -2206,7 +2055,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -2216,7 +2064,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -2234,7 +2081,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -2242,7 +2088,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -2252,7 +2097,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -2270,7 +2114,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Can you assist with the data analysis for the report?;
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Let's meet at the café to discuss the marketing strategy.;
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Are you joining us for the webinar tomorrow?;
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Please review the draft presentation slides I've attached.;
@@ -2278,7 +2121,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Can you send me the updated version of the proposal?;
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Let's finalize the budget plan for next quarter.;
-spam;Act now to save 50% on our latest collection. Limited time offer.;
 ham;Are you available for a call later today?;
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Thank you for your help with the client meeting preparation.;
@@ -2288,7 +2130,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Let's confirm the details for the upcoming conference.;
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Are you free to discuss the marketing campaign tomorrow?;
-spam;Exclusive offer: Buy one;   .
 ham;Please find the attached document for your review.;
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Can we meet to discuss the new project proposal?;
@@ -2324,7 +2165,6 @@ spam;Special offer: Buy now and get 50% off on all purchases. Limited time only!
 ham;Hi [Recipient's Name]; Let's confirm the venue for the upcoming conference next month. Please check the details and confirm at your earliest convenience. Regards
 spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi team; Join us for a webinar on digital marketing trends next Monday. Please RSVP to confirm your attendance. Regards
-spam;Exclusive deal: Buy one;   !
 ham;Hi [Recipient's Name]; Please find the attached document for your review and comments. Looking forward to your feedback. Best regards
 spam;Your subscription is about to expire. Renew now to continue enjoying our services.;
 ham;Hi [Recipient's Name]; Can we schedule a meeting to finalize the budget for the next quarter? Please let me know your availability. Best regards
@@ -2342,7 +2182,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Hi [Recipient's Name]; Can you assist with the data analysis for the report due next week? Let's discuss it further at your earliest convenience. Regards
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Hi team; Let's meet at the café to discuss the marketing strategy for the upcoming product launch. Please confirm your availability. Regards
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Hi [Recipient's Name]; Are you joining us for the webinar tomorrow on digital transformation? Please confirm your attendance. Regards
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Hi [Recipient's Name]; Please review the draft presentation slides I've attached. Looking forward to your feedback. Best regards
@@ -2350,8 +2189,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Can you send me the updated version of the proposal document? We're aiming to finalize it by the end of the week. Thank you! Best regards
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Hi team; Let's finalize the budget plan for next quarter in our upcoming meeting. Please come prepared with your insights. Regards
-spam;Act now to save 50% on our latest collection. Limited time offer.;
-ham;Hi [Recipient's Name]; Are you available for a call later today to discuss the client meeting agenda? Let me know your availability. Best regards
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Hi [Recipient's Name]; Thank you for your assistance with the client meeting preparation. Your contributions were greatly appreciated! Best regards
 spam;Win a free MacBook Pro! Enter our giveaway now.;
@@ -2360,7 +2197,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Let's confirm the details for the upcoming conference next month. Please review and confirm at your earliest convenience. Regards
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Hi [Recipient's Name]; Are you free to discuss the marketing campaign tomorrow? Let's schedule a time that works for both of us. Best regards
-spam;Exclusive offer: Buy one;   .
 ham;Hi [Recipient's Name]; Please find the attached document for your review. Looking forward to your feedback. Best regards
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Hi [Recipient's Name]; Can we meet to discuss the new project proposal? Please let me know your availability. Best regards
@@ -2378,7 +2214,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Hi [Recipient's Name]; Can you assist with the data analysis for the report due next week? Let's discuss it further at your earliest convenience. Regards
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Hi team; Let's meet at the café to discuss the marketing strategy for the upcoming product launch. Please confirm your availability. Regards
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Hi [Recipient's Name]; Are you joining us for the webinar tomorrow on digital transformation? Please confirm your attendance. Regards
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Hi [Recipient's Name]; Please review the draft presentation slides I've attached. Looking forward to your feedback. Best regards
@@ -2386,8 +2221,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Can you send me the updated version of the proposal document? We're aiming to finalize it by the end of the week. Thank you! Best regards
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Hi team; Let's finalize the budget plan for next quarter in our upcoming meeting. Please come prepared with your insights. Regards
-spam;Act now to save 50% on our latest collection. Limited time offer.;
-ham;Hi [Recipient's Name]; Are you available for a call later today to discuss the client meeting agenda? Let me know your availability. Best regards
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Hi [Recipient's Name]; Thank you for your assistance with the client meeting preparation. Your contributions were greatly appreciated! Best regards
 spam;Win a free MacBook Pro! Enter our giveaway now.;
@@ -2396,7 +2229,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Let's confirm the details for the upcoming conference next month. Please review and confirm at your earliest convenience. Regards
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Hi [Recipient's Name]; Are you free to discuss the marketing campaign tomorrow? Let's schedule a time that works for both of us. Best regards
-spam;Exclusive offer: Buy one;   .
 ham;Hi [Recipient's Name]; Please find the attached document for your review. Looking forward to your feedback. Best regards
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Hi [Recipient's Name]; Can we meet to discuss the new project proposal? Please let me know your availability. Best regards
@@ -2414,7 +2246,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Hi [Recipient's Name]; Can you assist with the data analysis for the report due next week? Let's discuss it further at your earliest convenience. Regards
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Hi team; Let's meet at the café to discuss the marketing strategy for the upcoming product launch. Please confirm your availability. Regards
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Hi [Recipient's Name]; Are you joining us for the webinar tomorrow on digital transformation? Please confirm your attendance. Regards
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Hi [Recipient's Name]; Please review the draft presentation slides I've attached. Looking forward to your feedback. Best regards
@@ -2422,8 +2253,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Can you send me the updated version of the proposal document? We're aiming to finalize it by the end of the week. Thank you! Best regards
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Hi team; Let's finalize the budget plan for next quarter in our upcoming meeting. Please come prepared with your insights. Regards
-spam;Act now to save 50% on our latest collection. Limited time offer.;
-ham;Hi [Recipient's Name]; Are you available for a call later today to discuss the client meeting agenda? Let me know your availability. Best regards
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Hi [Recipient's Name]; Thank you for your assistance with the client meeting preparation. Your contributions were greatly appreciated! Best regards
 spam;Win a free MacBook Pro! Enter our giveaway now.;
@@ -2432,7 +2261,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Let's confirm the details for the upcoming conference next month. Please review and confirm at your earliest convenience. Regards
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Hi [Recipient's Name]; Are you free to discuss the marketing campaign tomorrow? Let's schedule a time that works for both of us. Best regards
-spam;Exclusive offer: Buy one;   .
 ham;Hi [Recipient's Name]; Please find the attached document for your review. Looking forward to your feedback. Best regards
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Hi [Recipient's Name]; Can we meet to discuss the new project proposal? Please let me know your availability. Best regards
@@ -2450,7 +2278,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Hi [Recipient's Name]; Can you assist with the data analysis for the report due next week? Let's discuss it further at your earliest convenience. Regards
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Hi team; Let's meet at the café to discuss the marketing strategy for the upcoming product launch. Please confirm your availability. Regards
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Hi [Recipient's Name]; Are you joining us for the webinar tomorrow on digital transformation? Please confirm your attendance. Regards
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Hi [Recipient's Name]; Please review the draft presentation slides I've attached. Looking forward to your feedback. Best regards
@@ -2458,8 +2285,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Can you send me the updated version of the proposal document? We're aiming to finalize it by the end of the week. Thank you! Best regards
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Hi team; Let's finalize the budget plan for next quarter in our upcoming meeting. Please come prepared with your insights. Regards
-spam;Act now to save 50% on our latest collection. Limited time offer.;
-ham;Hi [Recipient's Name]; Are you available for a call later today to discuss the client meeting agenda? Let me know your availability. Best regards
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Hi [Recipient's Name]; Thank you for your assistance with the client meeting preparation. Your contributions were greatly appreciated! Best regards
 spam;Win a free MacBook Pro! Enter our giveaway now.;
@@ -2468,7 +2293,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Let's confirm the details for the upcoming conference next month. Please review and confirm at your earliest convenience. Regards
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Hi [Recipient's Name]; Are you free to discuss the marketing campaign tomorrow? Let's schedule a time that works for both of us. Best regards
-spam;Exclusive offer: Buy one;   .
 ham;Hi [Recipient's Name]; Please find the attached document for your review. Looking forward to your feedback. Best regards
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Hi [Recipient's Name]; Can we meet to discuss the new project proposal? Please let me know your availability. Best regards
@@ -2486,7 +2310,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Hi [Recipient's Name]; Can you assist with the data analysis for the report due next week? Let's discuss it further at your earliest convenience. Regards
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Hi team; Let's meet at the café to discuss the marketing strategy for the upcoming product launch. Please confirm your availability. Regards
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Hi [Recipient's Name]; Are you joining us for the webinar tomorrow on digital transformation? Please confirm your attendance. Regards
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Hi [Recipient's Name]; Please review the draft presentation slides I've attached. Looking forward to your feedback. Best regards
@@ -2494,8 +2317,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Can you send me the updated version of the proposal document? We're aiming to finalize it by the end of the week. Thank you! Best regards
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Hi team; Let's finalize the budget plan for next quarter in our upcoming meeting. Please come prepared with your insights. Regards
-spam;Act now to save 50% on our latest collection. Limited time offer.;
-ham;Hi [Recipient's Name]; Are you available for a call later today to discuss the client meeting agenda? Let me know your availability. Best regards
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Hi [Recipient's Name]; Thank you for your assistance with the client meeting preparation. Your contributions were greatly appreciated! Best regards
 spam;Win a free MacBook Pro! Enter our giveaway now.;
@@ -2504,7 +2325,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Let's confirm the details for the upcoming conference next month. Please review and confirm at your earliest convenience. Regards
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Hi [Recipient's Name]; Are you free to discuss the marketing campaign tomorrow? Let's schedule a time that works for both of us. Best regards
-spam;Exclusive offer: Buy one;   .
 ham;Hi [Recipient's Name]; Please find the attached document for your review. Looking forward to your feedback. Best regards
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Hi [Recipient's Name]; Can we meet to discuss the new project proposal? Please let me know your availability. Best regards
@@ -2522,7 +2342,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Hi [Recipient's Name]; Can you assist with the data analysis for the report due next week? Let's discuss it further at your earliest convenience. Regards
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Hi team; Let's meet at the café to discuss the marketing strategy for the upcoming product launch. Please confirm your availability. Regards
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Hi [Recipient's Name]; Are you joining us for the webinar tomorrow on digital transformation? Please confirm your attendance. Regards
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Hi [Recipient's Name]; Please review the draft presentation slides I've attached. Looking forward to your feedback. Best regards
@@ -2530,8 +2349,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Can you send me the updated version of the proposal document? We're aiming to finalize it by the end of the week. Thank you! Best regards
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Hi team; Let's finalize the budget plan for next quarter in our upcoming meeting. Please come prepared with your insights. Regards
-spam;Act now to save 50% on our latest collection. Limited time offer.;
-ham;Hi [Recipient's Name]; Are you available for a call later today to discuss the client meeting agenda? Let me know your availability. Best regards
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Hi [Recipient's Name]; Thank you for your assistance with the client meeting preparation. Your contributions were greatly appreciated! Best regards
 spam;Win a free MacBook Pro! Enter our giveaway now.;
@@ -2540,7 +2357,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Let's confirm the details for the upcoming conference next month. Please review and confirm at your earliest convenience. Regards
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Hi [Recipient's Name]; Are you free to discuss the marketing campaign tomorrow? Let's schedule a time that works for both of us. Best regards
-spam;Exclusive offer: Buy one;   .
 ham;Hi [Recipient's Name]; Please find the attached document for your review. Looking forward to your feedback. Best regards
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Hi [Recipient's Name]; Can we meet to discuss the new project proposal? Please let me know your availability. Best regards
@@ -2558,7 +2374,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Hi [Recipient's Name]; Can you assist with the data analysis for the report due next week? Let's discuss it further at your earliest convenience. Regards
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Hi team; Let's meet at the café to discuss the marketing strategy for the upcoming product launch. Please confirm your availability. Regards
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Hi [Recipient's Name]; Are you joining us for the webinar tomorrow on digital transformation? Please confirm your attendance. Regards
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Hi [Recipient's Name]; Please review the draft presentation slides I've attached. Looking forward to your feedback. Best regards
@@ -2566,8 +2381,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Can you send me the updated version of the proposal document? We're aiming to finalize it by the end of the week. Thank you! Best regards
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Hi team; Let's finalize the budget plan for next quarter in our upcoming meeting. Please come prepared with your insights. Regards
-spam;Act now to save 50% on our latest collection. Limited time offer.;
-ham;Hi [Recipient's Name]; Are you available for a call later today to discuss the client meeting agenda? Let me know your availability. Best regards
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Hi [Recipient's Name]; Thank you for your assistance with the client meeting preparation. Your contributions were greatly appreciated! Best regards
 spam;Win a free MacBook Pro! Enter our giveaway now.;
@@ -2576,7 +2389,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Let's confirm the details for the upcoming conference next month. Please review and confirm at your earliest convenience. Regards
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Hi [Recipient's Name]; Are you free to discuss the marketing campaign tomorrow? Let's schedule a time that works for both of us. Best regards
-spam;Exclusive offer: Buy one;   .
 ham;Hi [Recipient's Name]; Please find the attached document for your review. Looking forward to your feedback. Best regards
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Hi [Recipient's Name]; Can we meet to discuss the new project proposal? Please let me know your availability. Best regards
@@ -2594,7 +2406,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Hi [Recipient's Name]; Can you assist with the data analysis for the report due next week? Let's discuss it further at your earliest convenience. Regards
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Hi team; Let's meet at the café to discuss the marketing strategy for the upcoming product launch. Please confirm your availability. Regards
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Hi [Recipient's Name]; Are you joining us for the webinar tomorrow on digital transformation? Please confirm your attendance. Regards
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Hi [Recipient's Name]; Please review the draft presentation slides I've attached. Looking forward to your feedback. Best regards
@@ -2602,8 +2413,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Can you send me the updated version of the proposal document? We're aiming to finalize it by the end of the week. Thank you! Best regards
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Hi team; Let's finalize the budget plan for next quarter in our upcoming meeting. Please come prepared with your insights. Regards
-spam;Act now to save 50% on our latest collection. Limited time offer.;
-ham;Hi [Recipient's Name]; Are you available for a call later today to discuss the client meeting agenda? Let me know your availability. Best regards
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Hi [Recipient's Name]; Thank you for your assistance with the client meeting preparation. Your contributions were greatly appreciated! Best regards
 spam;Win a free MacBook Pro! Enter our giveaway now.;
@@ -2612,7 +2421,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Let's confirm the details for the upcoming conference next month. Please review and confirm at your earliest convenience. Regards
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Hi [Recipient's Name]; Are you free to discuss the marketing campaign tomorrow? Let's schedule a time that works for both of us. Best regards
-spam;Exclusive offer: Buy one;   .
 ham;Hi [Recipient's Name]; Please find the attached document for your review. Looking forward to your feedback. Best regards
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Hi [Recipient's Name]; Can we meet to discuss the new project proposal? Please let me know your availability. Best regards
@@ -2630,7 +2438,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Hi [Recipient's Name]; Can you assist with the data analysis for the report due next week? Let's discuss it further at your earliest convenience. Regards
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Hi team; Let's meet at the café to discuss the marketing strategy for the upcoming product launch. Please confirm your availability. Regards
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Hi [Recipient's Name]; Are you joining us for the webinar tomorrow on digital transformation? Please confirm your attendance. Regards
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Hi [Recipient's Name]; Please review the draft presentation slides I've attached. Looking forward to your feedback. Best regards
@@ -2638,8 +2445,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Can you send me the updated version of the proposal document? We're aiming to finalize it by the end of the week. Thank you! Best regards
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Hi team; Let's finalize the budget plan for next quarter in our upcoming meeting. Please come prepared with your insights. Regards
-spam;Act now to save 50% on our latest collection. Limited time offer.;
-ham;Hi [Recipient's Name]; Are you available for a call later today to discuss the client meeting agenda? Let me know your availability. Best regards
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Hi [Recipient's Name]; Thank you for your assistance with the client meeting preparation. Your contributions were greatly appreciated! Best regards
 spam;Win a free MacBook Pro! Enter our giveaway now.;
@@ -2648,7 +2453,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Let's confirm the details for the upcoming conference next month. Please review and confirm at your earliest convenience. Regards
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Hi [Recipient's Name]; Are you free to discuss the marketing campaign tomorrow? Let's schedule a time that works for both of us. Best regards
-spam;Exclusive offer: Buy one;   .
 ham;Hi [Recipient's Name]; Please find the attached document for your review. Looking forward to your feedback. Best regards
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Hi [Recipient's Name]; Can we meet to discuss the new project proposal? Please let me know your availability. Best regards
@@ -2666,7 +2470,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Hi [Recipient's Name]; Can you assist with the data analysis for the report due next week? Let's discuss it further at your earliest convenience. Regards
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Hi team; Let's meet at the café to discuss the marketing strategy for the upcoming product launch. Please confirm your availability. Regards
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Hi [Recipient's Name]; Are you joining us for the webinar tomorrow on digital transformation? Please confirm your attendance. Regards
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Hi [Recipient's Name]; Please review the draft presentation slides I've attached. Looking forward to your feedback. Best regards
@@ -2674,8 +2477,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Can you send me the updated version of the proposal document? We're aiming to finalize it by the end of the week. Thank you! Best regards
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Hi team; Let's finalize the budget plan for next quarter in our upcoming meeting. Please come prepared with your insights. Regards
-spam;Act now to save 50% on our latest collection. Limited time offer.;
-ham;Hi [Recipient's Name]; Are you available for a call later today to discuss the client meeting agenda? Let me know your availability. Best regards
 spam;Your account has been compromised. Take action now to secure it.;
 ham;Hi [Recipient's Name]; Thank you for your assistance with the client meeting preparation. Your contributions were greatly appreciated! Best regards
 spam;Win a free MacBook Pro! Enter our giveaway now.;
@@ -2684,7 +2485,6 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Let's confirm the details for the upcoming conference next month. Please review and confirm at your earliest convenience. Regards
 spam;Get a free sample of our new product. Click here to claim yours.;
 ham;Hi [Recipient's Name]; Are you free to discuss the marketing campaign tomorrow? Let's schedule a time that works for both of us. Best regards
-spam;Exclusive offer: Buy one;   .
 ham;Hi [Recipient's Name]; Please find the attached document for your review. Looking forward to your feedback. Best regards
 spam;Your subscription is about to expire. Renew now to continue using our service.;
 ham;Hi [Recipient's Name]; Can we meet to discuss the new project proposal? Please let me know your availability. Best regards
@@ -2702,7 +2502,6 @@ spam;Win a free vacation package to Hawaii! Click here to enter.;
 ham;Hi [Recipient's Name]; Can you assist with the data analysis for the report due next week? Let's discuss it further at your earliest convenience. Regards
 spam;Your account has been temporarily suspended. Verify your identity to restore access.;
 ham;Hi team; Let's meet at the café to discuss the marketing strategy for the upcoming product launch. Please confirm your availability. Regards
-spam;Buy one; get one free on all products today! Don't miss out.
 ham;Hi [Recipient's Name]; Are you joining us for the webinar tomorrow on digital transformation? Please confirm your attendance. Regards
 spam;You've been selected for an exclusive discount. Claim now!;
 ham;Hi [Recipient's Name]; Please review the draft presentation slides I've attached. Looking forward to your feedback. Best regards
@@ -2710,4 +2509,3 @@ spam;Your account security is at risk. Verify your details immediately.;
 ham;Hi [Recipient's Name]; Can you send me the updated version of the proposal document? We're aiming to finalize it by the end of the week. Thank you! Best regards
 spam;Get a 30-day free trial of our premium service. Sign up now!;
 ham;Hi team; Let's finalize the budget plan for next quarter in our upcoming meeting. Please come prepared with your insights. Regards
-spam;Act now to save 50% on our latest collection. Limited time offer.;
