@@ -16,10 +16,10 @@ import nltk
 from nltk.corpus import stopwords
 # nltk.download('stopwords')
 # nltk.download('punkt')
-df = pd.read_csv('../dataset/email_data_Andre+First.csv')
+df = pd.read_csv('../dataset/email_data_First+New.csv')
 
-data = df.where((pd.notnull(df)),"")
 data = df.dropna(axis=0, how='any')
+data = data.drop_duplicates(subset=['Message'])
 print(data.shape)
 
 data.loc[data['Category'] == 'spam' , 'Category'] = 0 # data shown as 0 if it is a spam
@@ -74,7 +74,7 @@ model_bidirectional.compile(loss='binary_crossentropy', optimizer='adam', metric
 
 early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=5)
 
-history_bidirectional = model_bidirectional.fit(X_train, Y_train, epochs=4, batch_size=32, validation_split=0.2, callbacks=[early_stopping])
+history_bidirectional = model_bidirectional.fit(X_train, Y_train, epochs=20, batch_size=32, validation_split=0.2, callbacks=[early_stopping])
 
 y_pred_bidirectional = (model_bidirectional.predict(X_test) > 0.5).astype(int)
 
@@ -83,7 +83,7 @@ accuracy_bidirectional = accuracy_score(Y_test, y_pred_bidirectional)
 report_bidirectional = classification_report(Y_test, y_pred_bidirectional, target_names=["ham","spam"])
 
 
-folder_path="./LSTM_Model/Model_6/"
+folder_path="./LSTM_Model/Model_8/"
 file_json = folder_path + 'model_bidirectional.json'
 file_token = folder_path + 'tokenizer.pkl'
 file_weights = folder_path + 'model_bidirectional.weights.h5'

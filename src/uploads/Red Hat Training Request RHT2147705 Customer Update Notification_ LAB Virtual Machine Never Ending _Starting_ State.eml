@@ -1,0 +1,94 @@
+Delivered-To: c14220123@john.petra.ac.id
+Received: by 2002:a05:7010:a83:b0:3bf:8c3e:c364 with SMTP id fm3csp1143650mdb;
+        Sun, 5 May 2024 19:21:58 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGj4iyvER4hTdRzGv1WMR62nYHd1XzfCIgGep+/WDzD2eqPq80xsjj2M8DdOe9OdeiGAGSf
+X-Received: by 2002:a17:903:1c8:b0:1ec:711b:edc0 with SMTP id e8-20020a17090301c800b001ec711bedc0mr11375306plh.67.1714962118224;
+        Sun, 05 May 2024 19:21:58 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1714962118; cv=none;
+        d=google.com; s=arc-20160816;
+        b=F7/ydoduDnD8NaHVu0xQgqgktn+pAc/x4CGfpH4nZ2sRtNV+jUSFjkvKDq7WX6gcmG
+         qNEI24wlEBrHK9J2/43ut0hyNue4RSwjotA0UcyrhlB7FpjWOpqy6umuJjZBve8NvR1K
+         /wpVM9P9djRxE81oyiy2sVdvG1jt5pcKqqA1vxL6dE6MHrhfEQSb3TVgM+mqlQAp+Pt7
+         yNDoAxV7jc7XSxBSChEMUmvLXkUn7WxHee9RHKrqCwdJggWYPqpBcRmyLaJ9WXsc2CWh
+         uohWoQCRELHfu1zobIo5DCgwlDlfTdLvFotyQb6Lps0Pj9ix3okvHHhlWknFA8uG5i9C
+         Z9vw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=auto-submitted:precedence:list-unsubscribe
+         :content-transfer-encoding:mime-version:subject:message-id:to
+         :reply-to:from:date:dkim-signature:dkim-filter;
+        bh=j+YLb41/Gr2iC8s4xKWv2Oi5NAnL+fMTAL6hmycWHgs=;
+        fh=bT62C00g+OpkpElQTWcB+ac7+t9Pi5At619QhOXC3qc=;
+        b=k5Bel/PCOh+E0XTmLfk6fY5U27imr08SNNeMceRZAuHDsd3GCyBegguaCYjGu5MRR0
+         BGk1PInmgMnUcuout4cADOc75SMTp+WmC2yP+sFMPETMw3LxWTBak8OsCXZPJiYAzDkv
+         ERhaxKddPscWuWCFCGb6z7IAl0LTLAcBBt0hHmGPEljGLdBIq82KP/EOFCG0hIOiKWYD
+         R6363ekTC63DfeRMomERVefd5LbF9yM0q90f8r/3ASrWAQYwG6c4zIvApzI5BZBE/dQB
+         nEQ2oPi1WJweaQ1CRRxhmcgqEyqmdrTLDD3lTYiyJvRzbR09G3WgB9CzabMA3GSYNTB/
+         ZGAQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@service-now.com header.s=20210504 header.b=B1Zj622q;
+       spf=pass (google.com: domain of redhat@service-now.com designates 149.96.6.7 as permitted sender) smtp.mailfrom=redhat@service-now.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=service-now.com
+Return-Path: <redhat@service-now.com>
+Received: from outbound24.service-now.com (outbound24.service-now.com. [149.96.6.7])
+        by mx.google.com with ESMTPS id u9-20020a170902e5c900b001e504940a11si7495621plf.231.2024.05.05.19.21.57
+        for <c14220123@john.petra.ac.id>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sun, 05 May 2024 19:21:58 -0700 (PDT)
+Received-SPF: pass (google.com: domain of redhat@service-now.com designates 149.96.6.7 as permitted sender) client-ip=149.96.6.7;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@service-now.com header.s=20210504 header.b=B1Zj622q;
+       spf=pass (google.com: domain of redhat@service-now.com designates 149.96.6.7 as permitted sender) smtp.mailfrom=redhat@service-now.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=service-now.com
+Received: from app138030.ycg3.service-now.com (unknown [10.248.3.236])
+	by outbound24.service-now.com (Postfix) with ESMTP id 4A7A1756B7
+	for <c14220123@john.petra.ac.id>; Sun,  5 May 2024 19:21:56 -0700 (PDT)
+DKIM-Filter: OpenDKIM Filter v2.11.0 outbound24.service-now.com 4A7A1756B7
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=service-now.com;
+	s=20210504; t=1714962116;
+	bh=j+YLb41/Gr2iC8s4xKWv2Oi5NAnL+fMTAL6hmycWHgs=;
+	h=Date:From:Reply-To:To:Subject:List-Unsubscribe:From;
+	b=B1Zj622qrkHa/ODRl4ein10HAVWJyHrCuVfhfDlAz9NHBC4A4HQJtb3EyrehQpZA/
+	 JcCMCkAgo7bSnHmSv03vsOlr2re+8ox4h2suL4kKX2bm23qBtily3fpaA4uPqgBUO+
+	 f6GSpP4P4oj1BA6QeL4yvOZwKKDGWa1PY1bqISAc+NI8qTu8OitP8qVVJhmoslJg7r
+	 7JLr6jtz/SnRDnx/TzBOqmCIrv+RRm50U6U7R+A4fIC9qh7NKquYk/0grC1ElKSoPf
+	 8XhILNE9N413SUJpCS5NhXHZSC2r/yTeZrpf5ajP2Qb6iNObU3WchfpTt5R7lB6xDX
+	 WTeeJ9hvLuEGw==
+Date: Sun, 5 May 2024 19:21:56 -0700 (PDT)
+From: Red Hat Training Request <redhat@service-now.com>
+Reply-To: Red Hat Request Management <redhat@service-now.com>
+To: c14220123@john.petra.ac.id
+Message-ID: <6566641.30529.1714962116289@app138030.ycg3.service-now.com>
+Subject: Red Hat Training Request RHT2147705 Customer Update Notification:
+ LAB Virtual Machine Never Ending "Starting" State
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-ServiceNow-Source: Notification-744880bc139ae600dce03ff18144b057
+List-Unsubscribe: <mailto:redhat@service-now.com?subject=Unsubscribe+from+%22RHT+Task+commented+-+requester%22&body=Sending+this+email+with+the+predefined+content+in+the+subject+and+body+will+unsubscribe+you+from+the+notification+%22RHT+Task+commented+-+requester%22.+%0D%0A%0D%0AUnsubscribe%3A%7B%22id%22%3A%22744880bc139ae600dce03ff18144b057%22%2C%22token%22%3A%22c797e62132%22%7D>
+X-ServiceNow-SysEmail-Version: 2
+Precedence: bulk
+Auto-Submitted: auto-generated
+X-ServiceNow-Generated: true
+
+<html><head></head><body><p>Comments:</p>
+<p style="font-size: 13px;"></p><div><div><span></span><hr></div><div style=""><span class="tdwrap"><strong>2024-05-05 22:21:42 EDT - Tianting Shi</strong></span><span style="float:right;"><sup> Customer update</sup></span></div><div style=""><span><span style="word-wrap:break-word;display:block;">Hello<br><br>We have observed that you have not responded to this ticket.<br>Assuming the issue to be resolved, we shall go ahead and close this service request.<br>Please feel free to reach out to us in case you have any issues with Red Hat Online Learning.<br><br>Regards,<br>Tianting Shi<br>Red Hat Academy</span></span></div></div>&nbsp;<p></p>
+<p style="font-size: 13px;">Previous comment:</p>
+<p>2024-04-29 03:08:04 EDT - Tianting Shi (Customer update)
+Hello
+
+You should be good to proceed with your learning.
+
+Once you create the lab ENV , please give it 5-10 mins to sync the cluster. 
+
+Please do not hesitate to contact us if you have any further questions or doubts. Our team is always here to assist you and ensure that you have the best possible experience.
+
+Best regards,
+Tianting Shi
+Red Hat Learning Experience
+
+</p>
+<p>&nbsp;</p>
+<p>Original Description:</p>
+<p>RHN: c14220123<br>User's Role: student<br>User's Country: Indonesia<br>Academy Name: Petra Christian University<br>Academy Region: apac<br>Academy Admin Username: blimbing118<br>Academy Admin Name: Agustinus Noertjahyana<br>Academy Admin Email: agust@petra.ac.id<br>Class Name: RH124-APAC-PCU00007<br>Course Slug: rh124-8.2<br>Course Title: RH124 - Red Hat System Administration I 8.2<br>Custom Class: False<br>Class Start Date: 2024-02-01T05:00:00.000Z<br>Class End Date: 2024-08-31T05:00:00.000Z<br>COA Percentage: 1<br>Class Instructors: rudyap<br>Description: LAB Virtual Machine Never Ending "Starting" State<br>When i start the lab virtual machine, it only says starting and I did restart the browser, relogin, stop the machine and start again, I even delete the machine and start it again, i waited almost 2 hours, but the machine still shows "starting" and it keeps consuming my used hours on the lab, even i can't open the lab. What should i do.</p>
+<p style="font-size: 13px;">&nbsp;</p><div>&nbsp;</div><div style="display:inline">Ref:MSG88998449</div></body></html>

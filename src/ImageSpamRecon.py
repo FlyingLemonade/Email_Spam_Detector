@@ -6,9 +6,9 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 def spamRecon(img_path=None, train_model=False):
     batch_size = 73
     epochs = 10
-    dataset_dir = 'C:\\Users\\Lenovo\\Documents\\ImageDatasets'
+    dataset_dir = '../dataset/ImageDatasets'
     class_names = ['ham', 'spam']
-    model_path = 'C:\\Users\\Lenovo\\Downloads\\ImageSpamRecon.keras'
+    model_path = './CNN_Model/ImageSpamRecon.keras'
 
     if train_model:
         train_datagen = ImageDataGenerator(rescale=1./255,
@@ -90,3 +90,5 @@ def spamRecon(img_path=None, train_model=False):
 # To make a prediction on an image
 # result = spamRecon(img_path='C:\\Users\\Lenovo\\Pictures\\ktp.jpg')
 # print(result)
+# spamRecon(img_path="..\dataset\ImageDatasets\ham\zzz_0013_4950651bbd_m.jpg",train_model=False)
+

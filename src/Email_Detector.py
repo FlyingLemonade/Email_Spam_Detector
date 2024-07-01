@@ -21,7 +21,7 @@ def email_detectoring(filepath):
     nltk.download('stopwords')
     nltk.download('punkt')
 
-    folder_path = "./LSTM_Model/Model_4/"
+    folder_path = "./LSTM_Model/Model_7/"
     stop_words = set(stopwords.words('english'))
 
     # Load the entire model
@@ -55,13 +55,13 @@ def email_detectoring(filepath):
         return padded_sequences
 
     # Example input text
-    input_text = """
+    # input_text = """
 
-    Sorry to be a pain. Is it ok if we meet another night? I spent late afternoon in casualty and that means i haven't done any of y stuff42moro and that includes all my time sheets and that. Sorry.
+    # Sorry to be a pain. Is it ok if we meet another night? I spent late afternoon in casualty and that means i haven't done any of y stuff42moro and that includes all my time sheets and that. Sorry.
 
-    """
+    # """
 
-    # input_text = lines
+    input_text = filepath
 
     preprocessed_input = preprocess_input(input_text, tokenizer, stop_words)
 

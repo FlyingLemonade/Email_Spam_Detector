@@ -1,0 +1,738 @@
+Delivered-To: c14220123@john.petra.ac.id
+Received: by 2002:a05:7010:8b94:b0:3e8:106f:9f4b with SMTP id eh20csp522491mdb;
+        Thu, 27 Jun 2024 08:09:50 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IG/NkNamEa5PA8DgSGZVix5RdM2GTeTXu3jpGKbWfwqShvkaZQnqOKeRuMeL1Tn7KqbbalD
+X-Received: by 2002:a05:6a20:4a21:b0:1be:3546:4a84 with SMTP id adf61e73a8af0-1be35464e06mr5210070637.44.1719500990526;
+        Thu, 27 Jun 2024 08:09:50 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1719500990; cv=none;
+        d=google.com; s=arc-20160816;
+        b=yk2RLgoSkvzKOeoqvNtA7g02Wp5UuDMfEkF+cQtqaoWBiV/qU4/XWzSZVHrHMPTmMI
+         eeChgBoq9r/UNW7lQRfDu8P3HrNZWoseKhQ44TSrpPmtBcaQ+9ZDwEEwo+bRZIZF7vIy
+         c8dbT8+/Ywg4ePMWKIcsjXE6aHOURV+bYU19/cU+yF65j5QeQFHC5Yq1iJORDoOfw8vM
+         /R+Rge3+l3VKWHBATuOAtCI0XIv856T4I6slaOAEoWI0YfEPiI+dV91/PNwj6585ZD/w
+         mkR0BKiJPRglEBMTlWKusy13fENYP5Z7jFyLNORebVIgXA73ino9U4fzjioPXrtosZC9
+         tV+w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-unsubscribe-post:mime-version:subject
+         :message-id:to:reply-to:from:date:dkim-signature:dkim-signature;
+        bh=vHKXvek5lH4k/JHZ5MNCCpp5WkXN76F6e2aUZuc9HzU=;
+        fh=bT62C00g+OpkpElQTWcB+ac7+t9Pi5At619QhOXC3qc=;
+        b=jDGgfemVBZ5AaiacsUEFTh57OZU1tEP25q4W8YFAY/JEn5C7CAal5Z8j09fu3/fZbT
+         DMGMcLTMrCQNtJa5/BhNvAjODZacmmJ8y4IgE3t3BKJSXomBiBP4CZxAN3oWnYS3qO21
+         mY68nSzJOatdgcm1zTwfSTVpwfY2t1vuRlL2dSi581/I0VjgqeQaCygLWJfQvNEkr4lj
+         GFyAlAeSvCJy5i+jXrRYhlX7aefPb4VDcnYzW/O+uQq7LGORFa2YOUBN4VG95fjxMDWV
+         0+QyFK/iiZpEEaVW7/A/SoY34fZJ4Dts/DtUcHOHJ5+Au8CwqHTn0HBaratMC+/Gduo4
+         Fq1g==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@external.cisco.com header.s=m1 header.b="khg0/vic";
+       dkim=pass header.i=@mktdns.com header.s=m1 header.b=d+380j9v;
+       spf=pass (google.com: domain of 059-vfz-834.0.590308.0.0.27142.9.265402148@em-sj-77.mktomail.com designates 199.15.215.34 as permitted sender) smtp.mailfrom=059-VFZ-834.0.590308.0.0.27142.9.265402148@em-sj-77.mktomail.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=external.cisco.com
+Return-Path: <059-VFZ-834.0.590308.0.0.27142.9.265402148@em-sj-77.mktomail.com>
+Received: from dragonfly.mktdns.com (dragonfly.mktdns.com. [199.15.215.34])
+        by mx.google.com with ESMTPS id d2e1a72fcca58-707fa02b4b0si747019b3a.7.2024.06.27.08.09.50
+        for <c14220123@john.petra.ac.id>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 27 Jun 2024 08:09:50 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 059-vfz-834.0.590308.0.0.27142.9.265402148@em-sj-77.mktomail.com designates 199.15.215.34 as permitted sender) client-ip=199.15.215.34;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@external.cisco.com header.s=m1 header.b="khg0/vic";
+       dkim=pass header.i=@mktdns.com header.s=m1 header.b=d+380j9v;
+       spf=pass (google.com: domain of 059-vfz-834.0.590308.0.0.27142.9.265402148@em-sj-77.mktomail.com designates 199.15.215.34 as permitted sender) smtp.mailfrom=059-VFZ-834.0.590308.0.0.27142.9.265402148@em-sj-77.mktomail.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=external.cisco.com
+X-MSFBL: EoB/w0UyqOocSiQ3itgFtDvhgcQaY8AHwjEAL8IwP/o=|eyJiIjoiZHZwLTE5Mi0
+	yOC0xNDYtMTE4IiwidSI6IjA1OS1WRlotODM0OjA6MTA5MDc6Mzk4MDk6MTQ5Nzg
+	1OjI3MTQyOjk6NTkwMzA4OjI2NTQwMjE0OCIsInIiOiJjMTQyMjAxMjNAam9obi5
+	wZXRyYS5hYy5pZCIsImciOiJiZy1zamQtMzUifQ==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1719500990;
+	s=m1; d=external.cisco.com; i=@external.cisco.com;
+	h=List-Unsubscribe:List-Unsubscribe-Post:Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=vHKXvek5lH4k/JHZ5MNCCpp5WkXN76F6e2aUZuc9HzU=;
+	b=khg0/vicFXNZYXIaoRA8EMwhSGgjwfwGmfD8pQuPn0FGlvimUN0bOS+27QkHmXjF
+	WnmfQ4nkegz2FWpIPBbsDOmaP32ZnTOyEnMAQT0gdE2q61u2a/RPEZd+86+AXYlOFat
+	MRZ7HRp78KAP3K2tY3NbfyHJN8MIJNiP4fi4Uu2I=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1719500990;
+	s=m1; d=mktdns.com; i=@mktdns.com;
+	h=List-Unsubscribe:List-Unsubscribe-Post:Content-Type:MIME-Version:Subject:To:From:Date;
+	bh=vHKXvek5lH4k/JHZ5MNCCpp5WkXN76F6e2aUZuc9HzU=;
+	b=d+380j9vlXr6nXsZ/PO7EvQBnvazv9jWKEjSLHxiVF/lmeQCTGDBV6hY1YAaOi2F
+	bRjchrU2sbu6WRTFrhDYdm0SZSEWPsBC8b0licj7kvDA7uNNJZV/GGKBYIcB8XjrOhF
+	HWJfnyeJc9W1L9z4SMU8RrXq7v5QEub8EM7pRw6M=
+Date: Thu, 27 Jun 2024 10:09:50 -0500 (CDT)
+From: Cisco Networking Academy <netacademail@external.cisco.com>
+Reply-To: netacademail@external.cisco.com
+To: c14220123@john.petra.ac.id
+Message-ID: <25113724.180781002.1719500990103@sjmktmail-batch1h.marketo.org>
+Subject: We're Live! Join the Celebration Now
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_180781001_1404417078.1719500990103"
+X-Binding: bg-sjd-35
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <http://nsmail.netacad.com/u/MDU5LVZGWi04MzQAAAGT-TeWk0jEkZUgO2ye8-dg2qYljF9pXJE3_A1T-W8blbwkVeynqldxwV7OfsIT62U77t0Cm7g=?emailAddress=MDU5LVZGWi04MzQAAAGT-TeWk33AOwv8qN0iSonx6-sv_PYYrtL1qfKTuEpR7JhqdWG73vVhTn7nAbeUkInWKfJKHQfrOptUZw>, <mailto:OEZVM6BSJ5GUM3SMK5ES233VI5YHAVC2FU3VUUSFGUWWOVBTJVNF6VK2OQ3WQ22ZNBCDQPI=.590308.27142.9@unsub-sj.mktomail.com>
+X-MarketoID: 059-VFZ-834:0:10907:39809:149785:27142:9:590308:265402148
+X-PVIQ: mkto-059VFZ834-000001-000000-590308
+X-Mailfrom: 059-VFZ-834.0.590308.0.0.27142.9.265402148@em-sj-77.mktomail.com
+X-MktArchive: false
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-MktMailDKIM: true
+
+------=_Part_180781001_1404417078.1719500990103
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+The alumni awards winner event is LIVE, and we're excited to have you with =
+us.
+Here's how you can join the celebration:
+
+
+
+=09- Click this link  <http://nsmail.netacad.com/MDU5LVZGWi04MzQAAAGT-TeWkz=
+wZpR-cw8Z8IrTe0nM-Tn8s7AwByZIRHwh21oo9L0zlNV03Q8Gf3ZIeKQqJsrCHyIs=3D>now to=
+ access the broadcast
+=09- Sit back and enjoy: Engage with fellow attendees in the chat, celebrat=
+e the winners, and share your excitement!
+Event details:
+
+
+=09- Date:=C2=A0Thursday, June=C2=A015, 2024
+
+=09- Start time: 08:00 am Pacific Time
+=09- Duration:=C2=A030 minutes=C2=A0
+=09- Location: virtual broadcast
+
+ <[[${FacebookLink}]]>
+ <[[${YoutubeLink}]]>
+ <[[${TwitterLink}]]>
+ <[[${LinkedInLink}]]>
+=20
+Join our feeds to be the first to hear about updates and opportunities, and=
+ share your own innovative ideas.
+
+Please do not reply to this email.
+
+ To unsubscribe, log in to Cisco Networking Academy <http://nsmail.netacad.=
+com/MDU5LVZGWi04MzQAAAGT-TeWk80kfxh9W_7ojxGw1xiQQd4NlltoTUru7tU6Ilh0nBDhtMW=
+m4czY6TaqVG2ngFFoFnc=3D>, click on your name (top right corner), and update=
+ your Notification and Email Preferences. If you are no longer part of the =
+Networking Academy program and need to have your account deleted, log in, g=
+o to help, and submit a request for deletion. If you do not have a Cisco Ne=
+tworking Academy account, unsubscribe here <http://nsmail.netacad.com/MDU5L=
+VZGWi04MzQAAAGT-TeWkxkEKUfDsCpRHaGD7kHkExdJq9LPesoo6wXAcvGVGeSG3swcPrcC17vy=
+OnbRWpEfUdE=3D>.
+
+=C2=A9 2021 Cisco Systems, Inc. and/or its affiliates. All rights reserved.=
+ 170 W Tasman, San Jose, CA 95134.
+
+Cisco.com <http://nsmail.netacad.com/MDU5LVZGWi04MzQAAAGT-TeWk7rDpa9BaPvXu-=
+r4X_FiyOZUtoM1YMaNOGHVWF-NNzTz7KuT24-ZhB_PJFPQu6UlmHg=3D> | Privacy Stateme=
+nt <http://nsmail.netacad.com/MDU5LVZGWi04MzQAAAGT-TeWkyTO3vJcW-PCv-ZnWG1h9=
+Klt4elMTThQaVdyPRwR6qho8R34MswsnHUUeM1qoqFB53c=3D> | Trademarks <http://nsm=
+ail.netacad.com/MDU5LVZGWi04MzQAAAGT-TeWk1pKY_zzzSpOEhCanToyDtz-d3xSuwisYp6=
+l-u6WuCxiR5UMz_Jc0bvBOezYoCAiqqM=3D>
+
+.
+
+------=_Part_180781001_1404417078.1719500990103
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" lang=3D"en" xml:lang=3D"en" xm=
+lns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-co=
+m:office:office">
+<head>           =20
+<!-- Footer --> =20
+<!-- Header Logo --> =20
+<!-- Main Image -->=20
+<!-- Greeting -->   =20
+<!-- Heading 1 -->   =20
+<!-- Heading 2 -->   =20
+<!-- Heading 3 -->   =20
+<!-- Body Copy -->  =20
+<!-- Single Col CTA -->       =20
+<!-- Image text Column -->                    =20
+<!-- Single 2 Col CTA -->        =20
+<!-- col2 Icon, HEading copy CTA -->                        =20
+<!-- Overlay BG -->             =20
+<!-- Event Details --> =20
+<!-- Social Links -->           =20
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3Dutf-8" />=
+=20
+<meta http-equiv=3D"x-ua-compatible" content=3D"IE=3Dedge" />=20
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0" />=20
+<meta name=3D"x-apple-disable-message-reformatting" />=20
+<meta name=3D"color-scheme" content=3D"light dark" />=20
+<meta name=3D"supported-color-schemes" content=3D"light dark" />=20
+<title></title>=20
+<style type=3D"text/css">
+
+  =20
+    body {
+      margin:0;
+      padding:0;
+      color:#000000;
+      font-family:  Arial,Helvetica,sans-serif;
+      font-weight:400;
+      font-style:normal;
+      -ms-text-size-adjust:100%;
+      -webkit-text-size-adjust:100%;
+      background-color:#FFFFFF;
+    }
+
+   =20
+   =20
+    a:link,a:visited {
+      font-family:  Arial,Helvetica,sans-serif;
+      font-weight:400;
+      font-style:normal;
+      color:#000000;
+    }
+
+    .yshortcuts a {
+    border-bottom: none !important;
+    }
+
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    img {
+      height:auto;=20
+      max-height:auto;=20
+      max-width:100%;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    h1, h2, h3, p {
+      margin-top:0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    div.mktoText a {
+      color: #00bceb ;
+      text-decoration: none;
+    }
+
+
+    .deviceWidth {
+      width: 300px !important;
+    }
+
+    * [lang~=3D"deviceWidth"] {
+      width: 300px !important;
+    }
+
+    .deviceWidthTwoThird {
+      width: 400px !important;
+    }
+
+    * [lang~=3D"deviceWidthTwoThird"] {
+      width: 400px !important;
+    }
+
+    .deviceWidthOneThird {
+      width: 200px !important;
+    }
+
+    * [lang~=3D"deviceWidthOneThird"] {
+      width: 200px !important;
+    }
+
+    .deviceWidthTwoFif {
+      width: 250px !important;
+    }
+
+    * [lang~=3D"deviceWidthTwoFif"] {
+      width: 250px !important;
+    }
+
+    .deviceWidthThreeFif {
+      width: 350px !important;
+    }
+
+    * [lang~=3D"deviceWidthThreeFif"] {
+      width: 350px !important;
+    }
+
+    .ExternalClass{
+      width:100%;
+    }
+
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div{
+      line-height: 100%;
+    }
+
+    /*Three column layout*/
+
+    .three-column .column {
+      width: 100%;
+      max-width: 200px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    table, td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+    }
+
+
+    @media only screen and (min-width: 480px){
+        .m-left {
+          float:left;
+          padding: 0 10px;
+        }
+        .m-right {
+          float: right;
+          padding: 0 10px;
+        }
+    }
+
+    @media only screen and (max-width: 480px){
+        body[yahoo] .deviceWidth, body[yahoo] .deviceWidthTwoThird, body[ya=
+hoo] .deviceWidthOneThird, body[yahoo] .deviceWidthTwoFif, body[yahoo] .dev=
+iceWidthThreeFif, .em_wrapper {
+          width: 100% !important;
+        }  =20
+
+        .twothreeimg img, .halfimg img {
+          width: 100% !important;
+        }
+=09=09
+=09=09.nopad {padding: 0 !important;}
+=09=09.pad70 {padding-left:40px !important; padding-right:40px !important; =
+padding-top:40px !important; padding-bottom:40px !important;}
+=09=09.hauto {height: auto!important;}
+=09=09.drop {width: 100% !important;display: block !important; text-align: =
+left !important;}
+=09=09.padlr30 {padding-left:30px !important; padding-right:30px !important=
+;}
+=09=09.padb20 {padding-bottom: 20px !important;}
+=09=09.padl20 {padding-left:20px !important;}
+=09=09
+    }
+
+    @media screen and (min-width: 601px) {
+        .container {
+            width: 600px!important;
+        }
+    }
+
+  </style>=20
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->=20
+<!--[if gte mso 9]>
+  <style>
+  /* Target Outlook 2007 and 2010 */
+  </style>
+<![endif]-->=20
+<!--[if (mso)|(mso 16)]>
+<style type=3D"text/css">
+body, table, td, a, span { font-family: Arial, Helvetica, sans-serif !impor=
+tant; }
+a {text-decoration: none;}
+</style>
+<![endif]-->=20
+</head>=20
+<body bgcolor=3D"#eeeeee" yahoo=3D"fix" class=3D"outlook" style=3D"backgrou=
+nd-color:#eeeeee;margin:0;padding:0px;-ms-text-size-adjust:100%;-webkit-tex=
+t-size-adjust:100%;"><style type=3D"text/css">div#emailPreHeader{ display: =
+none !important; }</style><div id=3D"emailPreHeader" style=3D"mso-hide:all;=
+ visibility:hidden; opacity:0; color:transparent; mso-line-height-rule:exac=
+tly; line-height:0; font-size:0px; overflow:hidden; border-width:0; display=
+:none !important;">Cisco Networking Academy 2023 Alumni Awards - Live Now!<=
+/div>=20
+<table bgcolor=3D"#eeeeee" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0" align=3D"center" style=3D"margin:0 auto; padding:0; background-color:#ee=
+eeee;">=20
+<tbody>
+<tr>=20
+<td style=3D"font-size: 0; text-align:center; vertical-align:top;">
+<!--[if (gte mso 9)|(IE)]>
+            <table width=3D"600" align=3D"center" cellpadding=3D"0" cellspa=
+cing=3D"0" border=3D"0" style=3D"width:600px;">
+                <tr>
+                    <td>
+            <![endif]-->
+<table id=3D"templateBody" bgcolor=3D"#FFFFFF" class=3D"mktoContainer conta=
+iner" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" s=
+tyle=3D"max-width: 600px;margin:0 auto; background-color:#FFFFFF;">
+<tr id=3D"HeadTopSpace" class=3D"mktoModule">=20
+<td style=3D"text-align: center; vertical-align: top;font-size: 0;">=20
+<table bgcolor=3D"#FFFFFF" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td align=3D"right" style=3D"font-size: 12px; font-family:  Arial,Helvetica=
+,sans-serif;font-weight:400;font-style:normal;color:#0d274d;padding-right:2=
+5px;padding-top:10px;padding-bottom:10px;"> <a href=3D"http://nsmail.netaca=
+d.com/v/MDU5LVZGWi04MzQAAAGT-TeWk3Lj274vNzBlb7FbFvapezuet2dJPEjGdMykxt9piL0=
+VcDjib_uGrLiZ8EsSFun2KnM=3D" style=3D"text-decoration:underline; color:#0d2=
+74d !important;" target=3D"_blank">View online</a> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>
+<tr id=3D"HeroImg9c1aa26a-09b1-4ccf-89a9-df9f6d8b4919" class=3D"mktoModule"=
+>=20
+<td style=3D"text-align: center; vertical-align: top;font-size: 0;">=20
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#FFFFFF"=
+ width=3D"100%" style=3D"border-spacing: 0;background-color:#FFFFFF;">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"padding-top:0px;padding-bottom:20px;">=20
+<div class=3D"mktoImg" id=3D"FullWidthHero3cce4bed-3d46-4324-bcbd-e7f35c6f8=
+420" alt=3D"" mktolockimgsize=3D"true" mktolockimgstyle=3D"true">=20
+<a target=3D"_blank" style=3D"mso-line-height-rule:exactly;-ms-text-size-ad=
+just: 100%;-webkit-text-size-adjust: 100%;"><img width=3D"600" style=3D"dis=
+play: block; -ms-interpolation-mode: bicubic; border: none; margin: 0 auto;=
+ height:auto; max-height:auto; max-width:100%; outline: none;border-image-w=
+idth: 0; padding:0;width:600px;" class=3D"Image" src=3D"https://go.netacad.=
+com/rs/059-VFZ-834/images/Email_JUN 18-01_600x200.jpg" /></a>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>
+<tr id=3D"Seperatora892b05a-8cb8-402c-aebc-69c936e42d4c" class=3D"mktoModul=
+e">=20
+<td style=3D"text-align: center; vertical-align: top;font-size: 0;">=20
+<table bgcolor=3D"" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=
+=3D"100%" style=3D"border-spacing: 0;">=20
+<tbody>=20
+<tr>=20
+<td height=3D"15"></td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>
+<tr id=3D"SubHeading" class=3D"mktoModule">=20
+<td style=3D"text-align: center; vertical-align: top;font-size: 0;">=20
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#FFFFFF"=
+ width=3D"100%" style=3D"border-spacing: 0;background-color:#FFFFFF;">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"top" align=3D"left" style=3D"font-family:Arial,Helvetica,sans=
+-serif;font-weight:700;font-style:normal;font-size:20px;text-align:left;mso=
+-line-height-rule:exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adju=
+st: 100%;padding-bottom:20px; padding-left:25px; padding-right:25px; paddin=
+g-top:5px;color:#0d274d;">=20
+<div class=3D"mktoText" id=3D"Headingh2Edit">=20
+<p>The alumni awards winner event is LIVE, and we're excited to have you wi=
+th us.<br /></p>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>
+<tr id=3D"BodyCopy13c5fabb-6890-41fa-a6a2-3bd8f519f548" class=3D"mktoModule=
+">=20
+<td style=3D"text-align: center; vertical-align: top;font-size: 0;">=20
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#FFFFFF"=
+ width=3D"100%" style=3D"border-spacing: 0;background-color:#FFFFFF;">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"top" align=3D"left" style=3D"font-family:  Arial,Helvetica,sa=
+ns-serif;font-weight:400;font-style:normal;font-size:12px;line-height: 20px=
+;text-align:left;mso-line-height-rule:exactly;-ms-text-size-adjust: 100%;-w=
+ebkit-text-size-adjust: 100%;padding-bottom:12px; padding-left:25px; paddin=
+g-right:25px; padding-top:0px;color:#000000;">=20
+<div class=3D"mktoText" id=3D"BodyCopyEditcfa32dde-792b-412b-a700-01d6b7513=
+1f9">=20
+<p class=3D"p1" style=3D"color: #000000; font-family: Arial, Helvetica, san=
+s-serif; font-size: 12px; font-style: normal; font-variant-ligatures: norma=
+l; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orp=
+hans: 2; text-align: left; text-indent: 0px; text-transform: none; white-sp=
+ace: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial;"><span style=3D"font-size: 16px;"><strong>Here's h=
+ow you can join the celebration:</strong></span></p>=20
+<div>=20
+<ul>=20
+<li><span style=3D"font-size: 14px;"><strong>Click <a href=3D
+"http://nsmail.netacad.com/MDU5LVZGWi04MzQAAAGT-TeWkzwZpR-cw8Z8IrTe0nM-Tn8s=
+7AwByZIRHwh21oo9L0zlNV03Q8Gf3ZIeKQqJsrCHyIs=3D" target=3D"_blank" id=3D""
+>this link </a>now to access the broadcast</strong></span></li>=20
+<li><span style=3D"font-size: 14px;"><strong>Sit back and enjoy: </strong>E=
+ngage with fellow attendees in the chat, celebrate the winners, and share y=
+our excitement!&nbsp;</span></li>=20
+</ul>=20
+</div>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>
+<tr id=3D"SingleCTA3d422fee-c98f-4def-8d6f-32594e8ea018" class=3D"mktoModul=
+e">=20
+<td bgcolor=3D"#FFFFFF" style=3D"text-align: center; vertical-align: top;fo=
+nt-size: 0;background-color: #FFFFFF;">=20
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#FFFFFF"=
+ width=3D"100%" style=3D"border-spacing: 0;background-color:#FFFFFF;">=20
+<tbody>=20
+<tr>=20
+<td style=3D"padding-left:35px; padding-right:35px; padding-top:0px;padding=
+-bottom:12px;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"border-spacing: 0;">=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-spa=
+cing: 0;">=20
+<tbody>=20
+<tr style=3D"border-spacing: 0;">=20
+<td bgcolor=3D"#6ebe4a" style=3D"padding-left:30px; padding-right:30px; pad=
+ding-top:10px;padding-bottom:10px; border-radius:0px;" align=3D"center"><a =
+title=3D"Join Now!" href=3D
+"http://nsmail.netacad.com/MDU5LVZGWi04MzQAAAGT-TeWkzwZpR-cw8Z8IrTe0nM-Tn8s=
+7AwByZIRHwh21oo9L0zlNV03Q8Gf3ZIeKQqJsrCHyIs=3D" target=3D"_blank" style=3D"=
+font-size: 13px; font-family: Arial,Helvetica,sans-serif;font-weight:700;fo=
+nt-style:normal;line-height: 20px; color: #ffffff; text-decoration: none; d=
+isplay: inline-block; "
+>Join Now!</a></td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>
+<tr id=3D"BodyCopya4067e84-53db-4ee9-860d-9d3e145dbeee" class=3D"mktoModule=
+">=20
+<td style=3D"text-align: center; vertical-align: top;font-size: 0;">=20
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#FFFFFF"=
+ width=3D"100%" style=3D"border-spacing: 0;background-color:#FFFFFF;">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"top" align=3D"left" style=3D"font-family:  Arial,Helvetica,sa=
+ns-serif;font-weight:400;font-style:normal;font-size:12px;line-height: 20px=
+;text-align:left;mso-line-height-rule:exactly;-ms-text-size-adjust: 100%;-w=
+ebkit-text-size-adjust: 100%;padding-bottom:12px; padding-left:25px; paddin=
+g-right:25px; padding-top:0px;color:#000000;">=20
+<div class=3D"mktoText" id=3D"BodyCopyEdita5a942d7-5c9c-461d-9aa7-d8db2026e=
+1ab">=20
+<p><span style=3D"font-size: 14px;"></span><span style=3D"font-size: 16px;"=
+><strong>Event details:</strong></span></p>=20
+<ul>=20
+<li><span style=3D"font-size: 14px;"><strong>Date:</strong>&nbsp;Thursday, =
+June&nbsp;15, 2024<br /></span></li>=20
+<li><span style=3D"font-size: 14px;"><strong>Start time: </strong>08:00 am =
+Pacific Time</span></li>=20
+<li><strong style=3D"font-size: 14px;">Duration:</strong><span style=3D"fon=
+t-size: 14px;">&nbsp;30 minutes&nbsp;</span></li>=20
+<li><strong><span style=3D"font-size: 14px;">Location: </span></strong><spa=
+n style=3D"font-size: 14px;">virtual broadcast</span></li>=20
+</ul>=20
+</div> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>
+<tr id=3D"FullLineSpacer" class=3D"mktoModule">=20
+<td style=3D"text-align: center; vertical-align: top;font-size: 0;">=20
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" styl=
+e=3D"border-spacing: 0;">=20
+<tbody>=20
+<tr>=20
+<td style=3D"padding-top:0px;padding-bottom:12px;">=20
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" styl=
+e=3D"border-spacing: 0;">=20
+<tbody>=20
+<tr>=20
+<td height=3D"3" style=3D"">=20
+<hr style=3D"height: 3px;border: 0;color:#005073;background-color:#005073;"=
+ /> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>
+<tr id=3D"FooterLogo" class=3D"mktoModule">=20
+<td bgcolor=3D"#f2f2f2" style=3D"text-align: center; vertical-align: top;fo=
+nt-size: 0;background-color: #f2f2f2;">=20
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#f2f2f2"=
+ width=3D"100%" align=3D"center" style=3D"border-spacing: 0;background-colo=
+r:#f2f2f2;">=20
+<tbody>=20
+<tr>=20
+<td valign=3D"top" align=3D"center" width=3D"167" style=3D"padding-top:16px=
+;padding-bottom:16px;">=20
+<!-- start Footer_LOGO --> <a href=3D
+"http://nsmail.netacad.com/MDU5LVZGWi04MzQAAAGT-TeWk5vDC0jJii_nnglT5x-Y9Fg2=
+4Z9POVAns7cCLql-OQheiBlweoaqjUtyUgBU4UNk0T8=3D" target=3D"_blank"
+>=20
+<div class=3D"mktoImg" id=3D"IconF1" alt=3D"" mktolockimgsize=3D"true" mkto=
+lockimgstyle=3D"true">=20
+<img class=3D"light-img" width=3D"167" style=3D"text-decoration: none; marg=
+in: 0 auto; padding: 0; -ms-interpolation-mode: bicubic; border: none; marg=
+in: 0 auto; width: 167px;" border=3D"0" src=3D"https://go.netacad.com/rs/05=
+9-VFZ-834/images/cisco_0921_cisco_netacad_logo.png" />=20
+</div> </a>=20
+<!-- end Footer_LOGO --> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>
+<tr id=3D"Footer" class=3D"mktoModule">=20
+<td>=20
+<div class=3D"mktoSnippet" id=3D"FooterSnippet">=20
+<table>=20
+<tbody>=20
+<tr>=20
+<td bgcolor=3D"#005073" style=3D"text-align: center; vertical-align: top; f=
+ont-size: 0; background-color: #005073; padding-top: 20px;">=20
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr align=3D"center" style=3D"margin: 0 auto;">=20
+<td>&nbsp;</td>=20
+<td valign=3D"top" width=3D"37" style=3D", padding-left: 5px; padding-right=
+: 5px;"><a href=3D
+"http://nsmail.netacad.com/MDU5LVZGWi04MzQAAAGT-TeWk2sIfVd-VdElhuq69ONR7pX_=
+GCQQrjDoFlx_saZVJ9jmQE8g7C4zuIXKfEYT55ZYKJs=3D" target=3D"_blank"
+><img width=3D"37" height=3D"37" src=3D"https://go.netacad.com/rs/059-VFZ-8=
+34/images/facebook.png" border=3D"0" style=3D"display: block; -ms-interpola=
+tion-mode: bicubic; border: none; margin: 0 auto;" alt=3D"Facebook Icon" />=
+</a></td>=20
+<td valign=3D"top" width=3D"37" style=3D", padding-left: 5px; padding-right=
+: 5px;"><a href=3D
+"http://nsmail.netacad.com/MDU5LVZGWi04MzQAAAGT-TeWk191V5YPxq1IuMpU13Mhh-rY=
+yQc4o9Uqh_Hb_02u_rW_61Z5U2_uquWnoNWSIezNVBw=3D" target=3D"_blank"
+><img width=3D"37" height=3D"37" border=3D"0" src=3D"https://go.netacad.com=
+/rs/059-VFZ-834/images/youtube.png" style=3D"display: block; -ms-interpolat=
+ion-mode: bicubic; border: none; margin: 0 auto;" alt=3D"Youtube Icon" /></=
+a></td>=20
+<td valign=3D"top" width=3D"37" style=3D", padding-left: 5px; padding-right=
+: 5px;"><a href=3D
+"http://nsmail.netacad.com/MDU5LVZGWi04MzQAAAGT-TeWkyvdEONKh-cDdGk-SPFSR-pd=
+Mvd-Hm-sCz5TGy7ESemF-joeoVIkk5qYxalrSjDjYSs=3D" target=3D"_blank"
+><img src=3D"https://go.netacad.com/rs/059-VFZ-834/images/twitter-x-logo.pn=
+g" alt=3D"twitter-x-logo.png" height=3D"37" width=3D"37" constrain=3D"true"=
+ imagepreview=3D"false" /></a></td>=20
+<td valign=3D"top" width=3D"37" style=3D", padding-left: 5px; padding-right=
+: 5px;"><a href=3D
+"http://nsmail.netacad.com/MDU5LVZGWi04MzQAAAGT-TeWk19uIQIfSO37kVJUfD28hQ7m=
+M3XLwufSGx_47SM0zYzlmTQfOBaV3Uet__GZAQyrhfo=3D" target=3D"_blank"
+><img width=3D"37" height=3D"37" border=3D"0" src=3D"https://go.netacad.com=
+/rs/059-VFZ-834/images/linkedin.png" style=3D"display: block; -ms-interpola=
+tion-mode: bicubic; border: none; margin: 0 auto;" alt=3D"LinkedIn Icon" />=
+</a></td>=20
+<td>&nbsp;</td>=20
+</tr>=20
+<tr colspan=3D"5">=20
+<td height=3D"15">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-size: 11px; font-family: Arial,Helvetica=
+,sans-serif; font-weight: 400; font-style: normal; color: #ffffff; line-hei=
+ght: 17px; padding: 0px 15px 0px 15px;" valign=3D"top">Join our feeds to be=
+ the first to hear about updates and opportunities, and share your own inno=
+vative ideas.</td>=20
+</tr>=20
+<tr>=20
+<td height=3D"20">&nbsp;</td>=20
+</tr>=20
+<tr>=20
+<td align=3D"center" style=3D"font-size: 11px; font-family: Arial,Helvetica=
+,sans-serif; font-weight: 400; font-style: normal; color: #ffffff; line-hei=
+ght: 17px; padding: 0px 35px 0px 35px;" valign=3D"top"> <p>Please do not re=
+ply to this email.<br /><br />To update your preferences or unsubscribe, lo=
+g in to <span style=3D"text-decoration: underline;"><a href=3D
+"http://nsmail.netacad.com/MDU5LVZGWi04MzQAAAGT-TeWk80kfxh9W_7ojxGw1xiQQd4N=
+lltoTUru7tU6Ilh0nBDhtMWm4czY6TaqVG2ngFFoFnc=3D" target=3D"_blank" style=3D"=
+color: #ffffff; text-decoration: underline;"
+>Cisco Networking Academy</a></span>, click on your name (top right corner)=
+, and update your Preferences. If you do not have a Cisco Networking Academ=
+y account, unsubscribe<a href=3D
+"http://nsmail.netacad.com/MDU5LVZGWi04MzQAAAGT-TeWk7jL-_XDImAcpg07rb5cl4ca=
+pJg5vqgalj2fT3u5BHCscyH-5mf6Ytk9r68V7lqNguY=3D" target=3D"_blank" style=3D"=
+color: #ffffff; text-decoration: none;"
+>&nbsp;<span style=3D"text-decoration: underline;">here</span></a>.</p> </t=
+d>=20
+</tr>=20
+<tr>=20
+<td align=3D"center" style=3D"font-size: 11px; font-family: Arial,Helvetica=
+,sans-serif; font-weight: 400; font-style: normal; color: #ffffff; line-hei=
+ght: 17px; padding: 0px 35px 0px 35px;" valign=3D"top"> <p>=C2=A9&nbsp;2024=
+ Cisco Systems, Inc. and/or its affiliates. All rights reserved. 170 W Tasm=
+an, San Jose, CA 95134.</p> </td>=20
+</tr>=20
+<tr>=20
+<td align=3D"center" style=3D"font-size: 11px; font-family: Arial,Helvetica=
+,sans-serif; font-weight: 400; font-style: normal; color: #ffffff; line-hei=
+ght: 17px; padding: 0px 35px 0px 35px;" valign=3D"top"> <p><a style=3D"colo=
+r: #ffffff; text-decoration: none;" href=3D
+"http://nsmail.netacad.com/MDU5LVZGWi04MzQAAAGT-TeWk7rDpa9BaPvXu-r4X_FiyOZU=
+toM1YMaNOGHVWF-NNzTz7KuT24-ZhB_PJFPQu6UlmHg=3D" target=3D"_blank"
+>Cisco.com</a> | <a style=3D"color: #ffffff; text-decoration: none;" href=
+=3D
+"http://nsmail.netacad.com/MDU5LVZGWi04MzQAAAGT-TeWkyTO3vJcW-PCv-ZnWG1h9Klt=
+4elMTThQaVdyPRwR6qho8R34MswsnHUUeM1qoqFB53c=3D" target=3D"_blank"
+>Privacy Statement</a> | <a style=3D"color: #ffffff; text-decoration: none;=
+" href=3D
+"http://nsmail.netacad.com/MDU5LVZGWi04MzQAAAGT-TeWk1pKY_zzzSpOEhCanToyDtz-=
+d3xSuwisYp6l-u6WuCxiR5UMz_Jc0bvBOezYoCAiqqM=3D" target=3D"_blank"
+>Trademarks</a></p> </td>=20
+</tr>=20
+<tr>=20
+<td height=3D"50">&nbsp;</td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+</div> </td>=20
+</tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+              </td>
+            </tr>
+          </table>
+        <![endif]--></td>=20
+</tr>=20
+</tbody>
+</table>  =20
+<a href=3D
+"http://nsmail.netacad.com/MDU5LVZGWi04MzQAAAGT-TeWkz-7FlvjrYQR_YPp1toYA3P0=
+AXqVgXFOCoRajfqDr_VsKBHd5Ny1R38HLYd8b4AieS8=3D"
+></a>
+<img src=3D"http://nsmail.netacad.com/trk?t=3D1&mid=3DMDU5LVZGWi04MzQAAAGT-=
+TeWlI9NLL6ObwRw2EiMA4ChNCF4KA4TjMyaQGSmLHSU_Acai2XzSlY7Q1RPWsWkDEB-UbAuTqEU=
+Y0nyQxCqeIFvFmL0kcd50Xtr3A83fhTo24udkSiC1AhxsFfUub-WYISuv5FNzkPydRko8BdFhyE=
+sT4U" width=3D"1" height=3D"1" style=3D"display:none !important;" alt=3D"" =
+/>
+
+<p></p>
+</body>
+</html>
+------=_Part_180781001_1404417078.1719500990103--

@@ -12,86 +12,73 @@ from imblearn.over_sampling import SMOTE
 from collections import Counter
 import matplotlib.pyplot as plt
 import pickle
+import nltk
+from nltk.corpus import stopwords
 
-df = pd.read_csv('../dataset/email_spam_indo.csv')
+folder_path = "./LSTM_Model/Model_7/"
+stop_words = set(stopwords.words('english'))
 
-data = df.where((pd.notnull(df)),"")
+# Load the entire model
+file_json = folder_path + 'model_bidirectional.json'
+file_token = folder_path + 'tokenizer.pkl'
+file_weights = folder_path + 'model_bidirectional.weights.h5'
 
-data.shape
+with open(file_json, 'r') as json_file:
+    loaded_model_json = json_file.read()
+loaded_model = tf.keras.models.model_from_json(loaded_model_json)
+loaded_model.load_weights(file_weights)
 
-data.loc[data['Kategori'] == 'spam' , 'Kategori'] = 0 # data shown as 0 if it is a spam
-data.loc[data['Kategori'] == 'ham', 'Kategori'] = 1 # data shown as 1 if it is not a spam
+# Load the tokenizer
+with open(file_token, 'rb') as handle:
+    tokenizer = pickle.load(handle)
 
-X = data['Pesan']
-Y = data['Kategori']
+print("Loaded model and tokenizer from disk.")
 
+def preprocess_input(text, tokenizer, stop_words):
+# Tokenize the text
+    words = nltk.word_tokenize(text)
+    filtered_sentence = [word.lower() for word in words if word.lower() not in stop_words]
 
-tokenizer = Tokenizer()
-tokenizer.fit_on_texts(X)
-vocab_size = len(tokenizer.word_index) + 1
-sequences = tokenizer.texts_to_sequences(X)
-max_sequence_length = max(len(seq) for seq in sequences)
-sequences = pad_sequences(sequences, maxlen=max_sequence_length,padding='post')
+    # Convert back to text after filtering stop words
+    filtered_text = " ".join(filtered_sentence)
 
+    # Tokenize the filtered text
+    sequences = tokenizer.texts_to_sequences([filtered_text])
+    sequence_length = 15
+    padded_sequences = pad_sequences(sequences, maxlen=sequence_length, padding='post')
+    return padded_sequences
 
-sm = SMOTE(random_state=42)
-Y = Y.astype(int)
-x_resampled, y_resampled = sm.fit_resample(sequences,Y)
+# Example input text
+input_text = """
+Subject: Weekly Newsletter - July Edition
+Hi [Recipient's Name],
 
+We hope this email finds you well. Here's our latest newsletter for July:
 
-class_count_after_oversampling = Counter(y_resampled)
-print("Class Counts After Oversampling:")
-for label, count in class_count_after_oversampling.items():
-   print(f"Class {label}: {count} samples")
+1. Featured Article: Tips for Summer Travel
+2. Events: Local Community Day this Saturday
+3. Product Spotlight: New Arrivals in our Store
 
-X_train, X_test, Y_train, Y_test = train_test_split(x_resampled, y_resampled, test_size=0.2, random_state=42)
+Stay tuned for more updates and feel free to reach out if you have any questions!
 
-# Training Model
-
-# model_lstm = Sequential()
-# model_lstm.add(Embedding(input_dim=vocab_size, output_dim= 128,
-#                          input_length=max_sequence_length))
-# model_lstm.add(SpatialDropout1D(0.2))
-# model_lstm.add(LSTM(64))
-# model_lstm.add(Dropout(0.2))
-# model_lstm.add(Dense(1, activation='sigmoid'))
-# model_lstm.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
-
-model_bidirectional = Sequential()
-model_bidirectional.add(Embedding(input_dim=vocab_size, output_dim= 128,
-                         input_length=max_sequence_length))
-model_bidirectional.add(SpatialDropout1D(0.2))
-model_bidirectional.add(Bidirectional(LSTM(64, return_sequences=True)))
-model_bidirectional.add(Bidirectional(LSTM(64)))
-model_bidirectional.add(Dropout(0.2))
-model_bidirectional.add(Dense(1, activation='sigmoid'))
-model_bidirectional.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+Best Regards,
+[Your Company Name]
 
 
+"""
 
-early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=5)
+# input_text = lines
 
-history_bidirectional = model_bidirectional.fit(X_train, Y_train, epochs=1, batch_size=32, validation_split=0.2, callbacks=[early_stopping])
+preprocessed_input = preprocess_input(input_text, tokenizer, stop_words)
 
-y_pred_bidirectional = (model_bidirectional.predict(X_test) > 0.5).astype(int)
+# Make a prediction
+prediction = (loaded_model.predict(preprocessed_input) > 0.5).astype(int)
 
-accuracy_bidirectional = accuracy_score(Y_test,y_pred_bidirectional)
-
-report_bidirectional = classification_report(Y_test, y_pred_bidirectional, target_names=["ham","spam"])
-# After model training
-
-model_json = model_bidirectional.to_json()
-with open("./LSTM_Model/Model_1/model_bidirectional.json", "w") as json_file:
-    json_file.write(model_json)
-
-# Save model weights to HDF5 file
-model_bidirectional.save_weights("./LSTM_Model/Model_1/model_bidirectional.weights.h5")
-
-# Save the tokenizer
-with open('./LSTM_Model/Model_1/tokenizer.pkl', 'wb') as handle:
-    pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
-
-print("LSTM Model:")
-print(f"Accuracy: {accuracy_bidirectional}")
-print(report_bidirectional)
-print("Saved model and tokenizer to disk.")
+# Output the result
+if prediction == 0:
+    print("spam",prediction[0])
+elif prediction == 1 :
+    print("Normal",prediction[0])
+else:
+    print("Unknown")
+    # return lines  # Return or process the manipulated email content

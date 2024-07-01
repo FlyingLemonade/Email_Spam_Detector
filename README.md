@@ -16,3 +16,16 @@ Note :
 <li>Nomor 7 task terakhir ae</li>
 <li>Link dataset + model fitur detect img spam : https://drive.google.com/drive/folders/1Grxp_RPsKiXzSTjPc3CMYUUbmtjU33wc?usp=drive_link</li>
 </ol>
+
+Model :
+<ol>
+
+<li>Indonesia</li>
+<li>Indonesia</li>
+<li>English_First_20Word</li>
+<li>English_First_15Word</li>
+<li>English_Andre_15Word</li>
+<li>English_Andre+First_15Word</li>
+<li>English_Andre+First+New_15Word <--- USED</li>
+<li>English_First+New_15Word</li>
+</ol>

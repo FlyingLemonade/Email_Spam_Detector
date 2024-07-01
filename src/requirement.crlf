@@ -6,3 +6,4 @@ mail-parser
 tensorflow 
 tabulate 
 imbalanced-learn
+opencv-python
