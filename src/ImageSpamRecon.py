@@ -60,8 +60,7 @@ def spamRecon(img_path=None, train_model=False):
         print(f"Model trained and saved to {model_path}")
         return
 
-    # Load model
-    model = models.load_model(model_path)
+    model = models.load_model(model_path) # Load model
 
     if img_path:
         img = cv.imread(img_path)
