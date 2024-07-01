@@ -34,7 +34,6 @@ def spamRecon(img_path=None, train_model=False):
             batch_size=batch_size,
             class_mode='binary')
 
-        # Uncomment to see the first 16 training images
         # training_images, training_labels = next(train_generator)
         # for i in range(16):
         #     plt.subplot(4, 4, i + 1)
@@ -61,34 +60,20 @@ def spamRecon(img_path=None, train_model=False):
         print(f"Model trained and saved to {model_path}")
         return
 
-    # Load the pre-trained model
-    model = models.load_model(model_path)
+    model = models.load_model(model_path) # Load model
 
     if img_path:
-        # Load and preprocess the image
         img = cv.imread(img_path)
         img = cv.resize(img, (128, 128))
         img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
-        img = np.array([img]) / 255.0  # Normalize the image
+        img = np.array([img]) / 255.0  # Normalisasi image
 
-        # Perform prediction
         prediction = model.predict(img)
         print(prediction)
 
-        # Interpret prediction
         if prediction[0] > 0.5:
             return "Spam"
         else:
             return "Ham"
 
     return "No image path provided"
-
-# Example usage:
-# To train the model
-# spamRecon(train_model=True)
-
-# To make a prediction on an image
-# result = spamRecon(img_path='C:\\Users\\Lenovo\\Pictures\\ktp.jpg')
-# print(result)
-# spamRecon(img_path="..\dataset\ImageDatasets\ham\zzz_0013_4950651bbd_m.jpg",train_model=False)
-
